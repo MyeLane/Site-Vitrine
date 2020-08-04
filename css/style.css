@@ -1,0 +1,52 @@
+#LogoMenu{
+  width: 8rem;
+}
+#navbarNav{
+  font-size: medium;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  color: #0000009d !important;
+}
+.navi{
+  
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.banner{
+  height: 100vh;
+}
+.banner h1{
+  font-size: 5rem !important;
+}
+.banner-media{
+  color: #189cd0;
+}
+.btn{
+  border-radius: 5rem !important;
+  width: 8rem;
+}
+.banner-text{
+  text-align: justify;
+  text-justify: distribute;
+}
+.social{
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
+  width: 9rem;
+}
+.marge{
+  margin-top: 12rem;
+}
+.test{
+  background-image: url("../img/ok\ 6.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
