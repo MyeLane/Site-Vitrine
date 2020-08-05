@@ -48,5 +48,21 @@ a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/*apropos*/
+.apropos {
   height: 100vh;
+}
+
+.apropos-left .img-fluid {
+  height: 80vh !important;
+}
+
+.apropos-right h1 {
+  font-size: 4rem;
+}
+
+.apropos-right h1 span {
+  color: #189cd0;
 }
