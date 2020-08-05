@@ -16,7 +16,7 @@ a{
   color: #0000009d !important;
 }
 .navi{
-  
+  background-color: #ffffff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 .banner{
@@ -65,4 +65,7 @@ a{
 
 .apropos-right h1 span {
   color: #189cd0;
+}
+.oui{
+  margin-top: -4rem;
 }
