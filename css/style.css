@@ -69,3 +69,25 @@ a{
 .oui{
   margin-top: -4rem;
 }
+.text-youtube{
+  margin-top: 100px;
+  color: #189cd0 !important;
+}
+.media{
+  height: 100vh;
+  padding-top: 6.5rem;
+}
+.media h1{
+  font-size: 3.5rem;
+}
+.iframe-media{
+  height: 76vh;
+  position: absolute;
+  right: -5px;
+}
+.iframe-media2{
+  height: 38vh;
+}
+.iframe-media3{
+  height: 37vh;
+}
