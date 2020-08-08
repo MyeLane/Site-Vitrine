@@ -60,21 +60,21 @@
 
         <!--apropos-->
         <div class="row apropos mt-5 ml-5">
-            <div class="col-4 apropos-left mt-5">
+            <div class="col-4 apropos-left mt-5 aos-init aos-animate code code--small code--up" data-aos="fade-up" data-aos-duration="2000">
                 <img src="img/apropos2.jpg" alt="" class="img-fluid">
             </div>
 
             <div class="col-8 apropos-right">
-                <h1 class="ml-3 mt-5">A propos de l'<span>E-media</span></h1>
+                <h1 class="ml-3 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span>E-media</span></h1>
                 <div class="row">
-                    <div class="col-6 mt-4">
+                    <div class="col-6 mt-4 aos-init aos-animate code code--small code--left" data-aos="zoom-in" data-aos-duration="2000">
                         <span>Crée en 2011, E-MEDIA est actuellement un établissement de référence et un acteur incontournable dans le domaine de la formation à Madagascar et notamment en Afrique francophone.
                          Il s’oriente dans plusieurs domaines et spécialisations</span>
                     </div>
-                    <div class="col-6 mt-3">
+                    <div class="col-6 mt-3 aos-init aos-animate code code--small code--left" data-aos="fade-up-left" data-aos-duration="2000">
                         <img src="img/apropos1.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-6 ml-5">
+                    <div class="col-6 ml-5 aos-init aos-animate code code--small code--right" data-aos="fade-up-right" data-aos-duration="2000">
                         <img src="img/apropos1.jpg" alt="" class="img-fluid oui ml-5">
                     </div>
                 </div>
@@ -82,13 +82,13 @@
         </div>
         <!--media-->
         <div class="row media">
-            <div class="col-4">
+            <div class="col-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-left" data-aos-duration="2000">
                 <h1>Vidéo Formation de l'<span class="banner-media">E-media</span></h1>
             </div>
-            <div class="col-4">
+            <div class="col-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-right" data-aos-duration="2000">
                 <iframe width="100%" class="iframe-media float-right" src="https://www.youtube.com/embed/NslPwvRvMYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-4">
+            <div class="col-4 aos-init aos-animate code code--small code--right" data-aos="fade-up-left" data-aos-duration="2000">
                 <iframe width="90%" class="iframe-media2" src="https://www.youtube.com/embed/uZO3QTWmNfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="90%" class="iframe-media3" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -105,7 +105,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
     </script>
 </body>
 
