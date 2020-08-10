@@ -1,52 +1,326 @@
-#LogoMenu{
-  width: 8rem;
-}
-#navbarNav{
-  font-size: medium;
-}
-li{
+/*general*/
+li {
   list-style: none;
 }
-a{
+
+a {
+  text-decoration: none !important;
+}
+
+/*header*/
+#header {
+  overflow: hidden;
+}
+
+.main-menu {
+  background-color: #189cd0;
+  z-index: 99;
+  transition: .5s;
+}
+
+.main-menu a{
   text-decoration: none;
   position: relative;
+  color: #ffffff;
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%);
-  color: #0000009d !important;
+  transition: .5s;
 }
-.navi{
-  
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  background: #ffffff;
+  color: #0000009d;
 }
+
+.sticky a {
+  color: #0000009d;
+}
+
+#LogoMenu{
+  width: 8rem;
+}
+
+#navbarNav{
+  font-size: medium;
+}
+
+ul li .fa {
+  font-size: 20px;
+}
+
+/*section*/
 .banner{
   height: 100vh;
 }
+
 .banner h1{
   font-size: 5rem !important;
+  font-weight: bold;
+  line-height: 120px;
 }
+
+.banner h4 {
+  font-weight: bold;
+}
+
 .banner-media{
   color: #189cd0;
 }
+
 .btn{
   border-radius: 5rem !important;
   width: 8rem;
 }
+
 .banner-text{
   text-align: justify;
   text-justify: distribute;
+  color: gray;
 }
+
 .social{
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
   width: 9rem;
 }
-.marge{
-  margin-top: 12rem;
+
+.social a {
+  font-size: 30px;
 }
+
+.social a:nth-child(1) i {
+  color: #189cd0 !important;
+}
+
+.social a:nth-child(2) i {
+  color: #012f93 !important;
+}
+
+.social a:nth-child(3) i {
+  color: #189cd0 !important;
+}
+
 .test{
-  background-image: url("../img/ok\ 6.png");
+  background-image: url("../img/accueil/ok 6.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: -200px;
+  background-position-y: -60px;
+}
+
+/*apropos*/
+.apropos {
   height: 100vh;
+}
+
+.apropos-left .img-fluid {
+  height: 80vh !important;
+}
+
+.apropos-left {
+  overflow: hidden;
+}
+
+.apropos-left img {
+  transition: all 2s ease;
+}
+
+.apropos-left:hover img {
+  transform: scale(1.1);
+}
+
+.apropos-right h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 100px;
+  color: #189cd0;
+}
+
+.apropos-right h1 span {
+  color: #189cd0 !important;
+}
+
+.apropos-right h1 span {
+  color: #189cd0;
+}
+
+.apropos-right .cree {
+  color: gray;
+}
+
+.oui{
+  margin-top: -4rem;
+}
+
+/*actualites*/
+.title h1{
+  color: #189cd0;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 100px;
+}
+
+.info-univ {
+  position: relative;
+  top: 50%;
+  left: 5%;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+  transform: translateY(-50%), translateX(-5%);
+  transition: 3s;
+}
+
+.univ-enline .img-univ:hover .info-univ {
+  display: block;
+  color: #ffffff;
+}
+
+.text h4 {
+  font-weight: bold;
+}
+
+.img-univ {
+  height: 70vh;
+  background-image: url("../img/accueil/logoafr.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-bacc {
+  height: 50vh;
+  background-image: url("../img/accueil/bac en logne-01-01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*google news*/
+.google-news ul {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.google-news ul li .title {
+  color: #189cd0 !important;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.google-news ul li.active {
+  background: #189cd0 !important;
+}
+
+.google-news ul li.active .title {
+  color: #ffffff !important;
+}
+
+.bottom-solid {
+  justify-content: center;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #189cd0;
+  transform: scaleX(0);
+  transition: 0.4s linear;
+  transform-origin: left;
+}
+
+.google-news ul li a:hover  .bottom-solid {
+  transform: scale(1);
+}
+
+.google-news ul li.active .bottom-solid {
+  background: #ffffff;
+}
+
+.google-body {
+
+}
+
+.image {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.information {
+ 
+}
+
+.information h6{
+  color: gray !important;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.information .top-solid {
+  border-top: 2px solid gray;
+}
+
+.information p {
+  color: #189cd0;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.information small {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.information a {
+  border: none !important;
+  color: #189cd0;
+  float: right;
+  transition: 0.5s;
+}
+
+.information a:hover {
+  color: #189cd0;
+  transform: translateX(5px);
+}
+
+#open-science .google-body {
+  display: none !important;
+}
+
+#open-techno .google-body {
+  opacity: 1 !important;
+}
+
+#open-sante .google-body {
+  display: none !important;
+}
+/*fin actualites*/
+
+/*media*/
+.text-youtube{
+  margin-top: 100px;
+  color: #189cd0 !important;
+}
+.media{
+  height: 100vh;
+  padding-top: 6.5rem;
+}
+.media h1{
+  font-size: 3.5rem;
+}
+.iframe-media{
+  height: 76vh;
+  position: absolute;
+  right: -5px;
+}
+.iframe-media2{
+  height: 38vh;
+}
+.iframe-media3{
+  height: 37vh;
 }
