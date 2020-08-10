@@ -116,140 +116,103 @@
 
             <div class="col-4 google-news">
                 <div class="row">
-                    <ul class="col-12 d-flex text-center">
-                        <li class="col-4 active pt-2 pb-2">
-                            <a href="#" id="open-sante" class="news">
-                                <div class="title">Santés</div>
-                                <span class="bottom-solid"></span>
-                            </a>
+                    <ul class="nav nav-pills col-12 nav-justified mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active news " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Technologie</a>
+                            <span class="bottom-solid"></span>
                         </li>
-                        <li class="col-4 pt-2 pb-2">
-                            <a href="#" id="open-science" class="news">
-                                <div class="title">Sciences</div>
-                                <span class="bottom-solid"></span>
-                            </a>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link news" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Santé</a>
+                            <span class="bottom-solid"></span>
                         </li>
-                        <li class="col-4 pt-2 pb-2">
-                            <a href="#" id="open-techno" class="news">
-                                <div class="title">Technologies</div>
-                                <span class="bottom-solid"></span>
-                            </a>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link news" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Economie</a>
+                            <span class="bottom-solid"></span>
                         </li>
                     </ul>
-
-                    <!--google news-->
-                    <!--sante-->
-                    <div class="col-12" id="open-sante">
+                    <div class="tab-content col-12" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                         <?php
-                            $newsTable = 'health';
                             date_default_timezone_set('UTC');
-                            $date = 'd-m-y';
-                            $url = 'http://newsapi.org/v2/everything?q='.$newsTable.'&from='.$date.'&language=fr&sortBy=publishedAt&pageSize=3&apiKey=a8ef73a0f34641f18ac14d7ff914fad6';
+                            $date = date('d-m-y');
+                            $url = 'http://newsapi.org/v2/everything?q=technologie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
                             $response = file_get_contents($url);
-                            $Newsdata = json_decode($response);
-
-                            foreach ($Newsdata->articles as $News) 
-                                {
-                                    $img = $News->urlToImage;
-                                    $title = $News->title;
-                                    $author = $News->author;
-                                    $description = $News->description;
-                                    $jour = $News->publishedAt;
-                                    $url = $News->url;
-                        ?>
-                                <div class="row mt-3 google-body">
-                                    <div class="col-4 image">
-                                        <img src="<?php echo $img ?>" class="img-fluid" alt="aucune img">
-                                    </div>
-
-                                    <div class="col-8 information">
-                                        <h6><?php echo $title ?></h6>
-                                        <div class="top-solid mb-1"></div>
-                                        <p class="p-1"><i class="fa fa-pen-fancy"></i><?php echo $author ?></p>
-                                        <small class="p-1">Date de publication:<?php echo $jour ?></small>
-                                        <a href="#" class="btn m-2" target="_top">Voir plus</a>
-                                    </div>
-                                </div>
-                            <?php 
-                                }
-                            ?>
-                    </div>
-
-                    <!--science-->
-                    <div class="col-12" id="open-science">
-                        <?php
-                            $newsTable = 'health';
-                            date_default_timezone_set('UTC');
-                            $date = 'd-m-y';
-                            $url = 'http://newsapi.org/v2/everything?q='.$newsTable.'&from='.$date.'&language=fr&sortBy=publishedAt&pageSize=3&apiKey=a8ef73a0f34641f18ac14d7ff914fad6';
-                            $response = file_get_contents($url);
-                            $Newsdata = json_decode($response);
-
-                            foreach ($Newsdata->articles as $News) 
-                                {
-                                    $img = $News->urlToImage;
-                                    $title = $News->title;
-                                    $author = $News->author;
-                                    $description = $News->description;
-                                    $jour = $News->publishedAt;
-                                    $url = $News->url;
-                        ?>
-                                <div class="row mt-3 google-body">
-                                    <div class="col-4 image">
-                                        <img src="<?php echo $img ?>" class="img-fluid" alt="aucune img">
-                                    </div>
-
-                                    <div class="col-8 information">
-                                        <h6><?php echo $title ?></h6>
-                                        <div class="top-solid mb-1"></div>
-                                        <p class="p-1"><i class="fa fa-pen-fancy"></i><?php echo $author ?></p>
-                                        <small class="p-1">Date de publication:<?php echo $jour ?></small>
-                                        <a href="#" class="btn m-2" target="_top">Voir plus</a>
-                                    </div>
-                                </div>
-                            <?php 
-                                }
-                            ?>
-                    </div>
-
-                    <!--technologie-->
-                    <div class="col-12" id="open-techno">
-                        <?php
-                            $newsTable = 'technology';
-                            date_default_timezone_set('UTC');
-                            $date = 'd-m-y';
-                            $url = 'http://newsapi.org/v2/everything?q='.$newsTable.'&from='.$date.'&language=fr&sortBy=publishedAt&pageSize=3&apiKey=a8ef73a0f34641f18ac14d7ff914fad6';
-                            $response = file_get_contents($url);
-                            $Newsdata = json_decode($response);
-
-                            foreach ($Newsdata->articles as $News) 
-                                {
-                                    $img = $News->urlToImage;
-                                    $title = $News->title;
-                                    $author = $News->author;
-                                    $description = $News->description;
-                                    $jour = $News->publishedAt;
-                                    $url = $News->url;
-                        ?>
-                                <div class="row mt-3 google-body">
-                                    <div class="col-4 image">
-                                        <img src="<?php echo $img ?>" class="img-fluid" alt="aucune img">
-                                    </div>
-
-                                    <div class="col-8 information">
-                                        <h6><?php echo $title ?></h6>
-                                        <div class="top-solid mb-1"></div>
-                                        <p class="p-1"><i class="fa fa-pen-fancy"></i><?php echo $author ?></p>
-                                        <small class="p-1">Date de publication:<?php echo $jour ?></small>
-                                        <a href="#" class="btn m-2" target="_top">Voir plus</a>
-                                    </div>
-                                </div>
-                            <?php 
-                                }
-                            ?>
-                    </div>
+                            $NewsData = json_decode($response); 
                     
+                            foreach($NewsData->articles as $News){          
+                        ?>
+                                <div class="row mt-3 google-body">
+                                    <div class="col-4 image">
+                                        <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
+                                    </div>
+
+                                    <div class="col-8 information">
+                                        <h6><?php echo $News->title; ?></h6>
+                                        <div class="top-solid mb-1"></div>
+                                        <small class="p-1">Date de publication: <?php echo $News->publishedAt ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_top">Voir plus</a>
+                                    </div>
+                                </div>
+                            <?php 
+                                }
+                            ?>
+                
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <?php
+                        date_default_timezone_set('UTC');
+                        $date = date('d-m-y');
+                        $url = 'http://newsapi.org/v2/everything?q=santé&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                        $response = file_get_contents($url);
+                        $NewsData = json_decode($response); 
+                    
+                        foreach($NewsData->articles as $News){          
+                        ?>
+                                <div class="row mt-3 google-body">
+                                    <div class="col-4 image">
+                                        <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
+                                    </div>
+
+                                    <div class="col-8 information">
+                                        <h6><?php echo $News->title; ?></h6>
+                                        <div class="top-solid mb-1"></div>
+                                        <small class="p-1">Date de publication: <?php echo $News->publishedAt ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_top">Voir plus</a>
+                                    </div>
+                                </div>
+                            <?php 
+                                }
+                            ?>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <?php
+                        date_default_timezone_set('UTC');
+                        $date = date('d-m-y');
+                        $url = 'http://newsapi.org/v2/everything?q=economie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                        $response = file_get_contents($url);
+                        $NewsData = json_decode($response); 
+                    
+                        foreach($NewsData->articles as $News){          
+                        ?>
+                                <div class="row mt-3 google-body">
+                                    <div class="col-4 image">
+                                        <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
+                                    </div>
+
+                                    <div class="col-8 information">
+                                        <h6><?php echo $News->title; ?></h6>
+                                        <div class="top-solid mb-1"></div>
+                                        <small class="p-1">Date de publication: <?php echo $News->publishedAt ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_top">Voir plus</a>
+                                    </div>
+                                </div>
+                            <?php 
+                                }
+                            ?>
+                        </div>
+                    </div>
                 </div>
+                    
             </div>
         </div>
 
@@ -270,6 +233,7 @@
         <!--Nos frmations-->
         <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illum voluptatum assumenda magni ipsam rem quo exercitationem quidem aperiam delectus, repudiandae nihil odit consectetur aliquam eveniet fugiat sed natus dolor!</h6>
+            <h1>TEST</h1>
         </div>
     </div>
 

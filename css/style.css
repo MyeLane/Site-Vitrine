@@ -247,7 +247,25 @@ ul li .fa {
 .google-body {
 
 }
+.nav-pills .nav-link.active{
+  background-color: #189cd0 !important;
+}
+.nav-pills .nav-link{
+  background-color: #ffffff !important;
+  border-radius: 0rem !important;
+  padding: 1.5rem;
+}
 
+.news{
+  color: #189cd0 !important;
+  font-weight: bold;
+  line-height: 20px;
+}
+.news.active{
+  color: #ffffff !important;
+  font-weight: bold;
+  line-height: 20px;
+}
 .image {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
