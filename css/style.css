@@ -163,42 +163,69 @@ ul li .fa {
   font-size: 4rem;
   font-weight: bold;
   line-height: 100px;
+  text-align: center;
 }
 
-.info-univ {
-  position: relative;
-  top: 50%;
-  left: 5%;
-  font-size: 20px;
+.univ-enline::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  transition: all ease-in-out 1s;
+  z-index: 2;
+  opacity: 0;
+  transform: translateX(-550px);
+}
+
+.univ-enline .univ-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.6s;
+}
+
+.univ-enline .univ-info h4 {
+  text-align: center;
+  color: #fff;
   font-weight: bold;
-  display: none;
-  transform: translateY(-50%), translateX(-5%);
-  transition: 3s;
 }
 
-.univ-enline .img-univ:hover .info-univ {
-  display: block;
-  color: #ffffff;
+.univ-enline .univ-info p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
 }
 
-.text h4 {
+.univ-enline:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.univ-enline:hover .univ-info {
+  opacity: 1;
+  top: calc(50% - 48px);
+}
+
+.bacc-enline .bacc-info h4 {
+  text-align: center;
+  background: #189cd0;
+  color: #fff;
+  font-size: 4rem;
   font-weight: bold;
-}
-
-.img-univ {
-  height: 70vh;
-  background-image: url("../img/accueil/logoafr.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.img-bacc {
-  height: 50vh;
-  background-image: url("../img/accueil/bac en logne-01-01.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  line-height: 150px;
+  transition: all .8s ease;
 }
 
 /*google news*/
@@ -206,20 +233,6 @@ ul li .fa {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
   padding-left: 1px;
   padding-right: 1px;
-}
-
-.google-news ul li .title {
-  color: #189cd0 !important;
-  font-weight: bold;
-  line-height: 20px;
-}
-
-.google-news ul li.active {
-  background: #189cd0 !important;
-}
-
-.google-news ul li.active .title {
-  color: #ffffff !important;
 }
 
 .bottom-solid {
@@ -231,29 +244,23 @@ ul li .fa {
   width: 100%;
   height: 4px;
   background: #189cd0;
-  transform: scaleX(0);
+  transform: scaleX(1);
   transition: 0.4s linear;
   transform-origin: left;
 }
 
-.google-news ul li a:hover  .bottom-solid {
-  transform: scale(1);
-}
-
-.google-news ul li.active .bottom-solid {
-  background: #ffffff;
-}
-
-.google-body {
-
-}
 .nav-pills .nav-link.active{
   background-color: #189cd0 !important;
 }
+
 .nav-pills .nav-link{
   background-color: #ffffff !important;
   border-radius: 0rem !important;
-  padding: 1.5rem;
+  padding: 1rem;
+}
+
+.tab-content {
+  height: 70vh;
 }
 
 .news{
@@ -261,17 +268,15 @@ ul li .fa {
   font-weight: bold;
   line-height: 20px;
 }
+
 .news.active{
   color: #ffffff !important;
   font-weight: bold;
   line-height: 20px;
 }
+
 .image {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
-.information {
- 
 }
 
 .information h6{
@@ -305,18 +310,6 @@ ul li .fa {
   color: #189cd0;
   transform: translateX(5px);
 }
-
-#open-science .google-body {
-  display: none !important;
-}
-
-#open-techno .google-body {
-  opacity: 1 !important;
-}
-
-#open-sante .google-body {
-  display: none !important;
-}
 /*fin actualites*/
 
 /*media*/
@@ -329,7 +322,10 @@ ul li .fa {
   padding-top: 6.5rem;
 }
 .media h1{
-  font-size: 3.5rem;
+  color: #189cd0;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 100px;
 }
 .iframe-media{
   height: 76vh;
