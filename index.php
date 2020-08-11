@@ -63,9 +63,9 @@
     <div class="container-fluid contenu">
 
         <!--apropos-->
-        <div class="row apropos mt-5 ml-5">
+        <div class="row apropos mt-3 ml-5">
             <div class="col-4 apropos-left mt-5 aos-init aos-animate code code--small code--up" data-aos="fade-up" data-aos-duration="2000">
-                <img src="img/accueil/apropos2.jpg" alt="" class="img-fluid">
+                <img src="img/accueil/apropos2.jpg" alt="" class="img-fluid mt-5">
             </div>
 
             <div class="col-8 apropos-right">
@@ -87,35 +87,33 @@
 
         <!--actulites-->
         <div class="row actualites mt-5">
-
-            <div class="col-12 text-center title mt-5">
-                <h1>Actualités</h1>
-            </div>
-
-            <div class="col-4 univ-enline mt-5">
-                <div class="col-12 img-univ">
-
-                    <p class="info-univ">La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophones. </p>
-                </div>
-
-                <div class="col-12 text text-center mt-4 d-none">
-                    <h4>FORMATION UNIVERSITAIRE EN LIGNE (e-learning)</h4>
-                </div>
-            </div>
-
-            <div class="col-4 bacc-enline mt-5 text-center">
-                <div class="col-12 img-bacc">
-
-                </div>
-
-                <div class="col-12 text mt-5 d-none">
-                    <h4>FORMATION BACC EN LIGNE <br>(e-learning)</h4>
-                </div>
-
-            </div>
-
-            <div class="col-4 google-news">
+            <div class="col-8">
                 <div class="row">
+                    <div class="col-12 title ml-5 mt-5">
+                        <h1>Actualités</h1>
+                    </div>
+
+                    <div class="col-6 univ-enline">
+                        <img src="img/accueil/logoafr.jpg" class="img-fluid" alt="universite">
+                        <div class="univ-info">
+                            <h4>FORMATION UNIVERSITAIRE EN LIGNE<br> (e-learning)</h4>
+                            <p>La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophones. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 bacc-enline">
+                        <img src="img/accueil/bac en logne-01-01.jpg" class="img-fluid" alt="bacc">
+                        <div class="bacc-info">
+                            <h4>Bientot!</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--google news-->
+            <div class="col-4 google-news mt-5">
+                <div class="row mt-5">
                     <ul class="nav nav-pills col-12 nav-justified mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active news " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Technologie</a>
@@ -130,17 +128,19 @@
                             <span class="bottom-solid"></span>
                         </li>
                     </ul>
-                    <div class="tab-content col-12" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <?php
-                            date_default_timezone_set('UTC');
-                            $date = date('d-m-y');
-                            $url = 'http://newsapi.org/v2/everything?q=technologie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
-                            $response = file_get_contents($url);
-                            $NewsData = json_decode($response); 
                     
-                            foreach($NewsData->articles as $News){          
-                        ?>
+                    <div class="tab-content col-12 overflow-auto" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <?php
+                                date_default_timezone_set('UTC');
+                                $date = date('d-m-y');
+                                $url = 'http://newsapi.org/v2/everything?q=technologie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                                $response = file_get_contents($url);
+                                $NewsData = json_decode($response); 
+                        
+                                foreach($NewsData->articles as $News)
+                                {          
+                            ?>
                                 <div class="row mt-3 google-body">
                                     <div class="col-4 image">
                                         <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
@@ -159,15 +159,16 @@
                 
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <?php
-                        date_default_timezone_set('UTC');
-                        $date = date('d-m-y');
-                        $url = 'http://newsapi.org/v2/everything?q=santé&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
-                        $response = file_get_contents($url);
-                        $NewsData = json_decode($response); 
-                    
-                        foreach($NewsData->articles as $News){          
-                        ?>
+                            <?php
+                            date_default_timezone_set('UTC');
+                            $date = date('d-m-y');
+                            $url = 'http://newsapi.org/v2/everything?q=santé&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                            $response = file_get_contents($url);
+                            $NewsData = json_decode($response); 
+                        
+                            foreach($NewsData->articles as $News)
+                                {          
+                            ?>
                                 <div class="row mt-3 google-body">
                                     <div class="col-4 image">
                                         <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
@@ -185,15 +186,16 @@
                             ?>
                         </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <?php
-                        date_default_timezone_set('UTC');
-                        $date = date('d-m-y');
-                        $url = 'http://newsapi.org/v2/everything?q=economie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
-                        $response = file_get_contents($url);
-                        $NewsData = json_decode($response); 
-                    
-                        foreach($NewsData->articles as $News){          
-                        ?>
+                            <?php
+                            date_default_timezone_set('UTC');
+                            $date = date('d-m-y');
+                            $url = 'http://newsapi.org/v2/everything?q=economie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                            $response = file_get_contents($url);
+                            $NewsData = json_decode($response); 
+                        
+                            foreach($NewsData->articles as $News)
+                                {          
+                            ?>
                                 <div class="row mt-3 google-body">
                                     <div class="col-4 image">
                                         <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
