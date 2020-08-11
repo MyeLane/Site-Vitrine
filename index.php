@@ -69,7 +69,7 @@
             </div>
 
             <div class="col-8 apropos-right">
-                <h1 class="ml-5 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span>E-media</span></h1>
+                <h1 class="ml-5 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span class="banner-media">E-media</span></h1>
                 <div class="row">
                     <div class="cree col-6 mt-4 aos-init aos-animate code code--small code--left" data-aos="zoom-in" data-aos-duration="2000">
                         <span>Crée en 2011, E-MEDIA est actuellement un établissement de référence et un acteur incontournable dans le domaine de la formation à Madagascar et notamment en Afrique francophone.
@@ -88,26 +88,24 @@
         <!--actulites-->
         <div class="row actualites mt-5">
             <div class="col-8">
-                <div class="row">
+                <div class="row card-deck">
                     <div class="col-12 title ml-5 mt-5">
-                        <h1>Actualités</h1>
+                        <h1 class="mt-4"><span class="banner-media">Nos</span> actualités</h1>
                     </div>
-
-                    <div class="col-6 univ-enline">
-                        <img src="img/accueil/logoafr.jpg" class="img-fluid" alt="universite">
-                        <div class="univ-info">
-                            <h4>FORMATION UNIVERSITAIRE EN LIGNE<br> (e-learning)</h4>
-                            <p>La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophones. </p>
+                    <div class="card col-5 mt-5">
+                        <img class="card-img-top" src="img/accueil/emedia pour site 2.jpg" class="img-fluid" alt="universite">
+                        <div class="card-body">
+                            <h5 class="card-title">Formation Universitaire en ligne</h5>
+                            <small class="card-text">La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophones.</small>
                         </div>
                     </div>
-
-                    <div class="col-6 bacc-enline">
-                        <img src="img/accueil/bac en logne-01-01.jpg" class="img-fluid" alt="bacc">
-                        <div class="bacc-info">
-                            <h4>Bientot!</h4>
+                    <div class="card col-5 mt-5">
+                        <img class="card-img-top" src="img/accueil/alefa sita-01.jpg" class="img-fluid" alt="universite">
+                        <div class="card-body">
+                            <h5 class="card-title">Formation baccalauréat en ligne</h5>
+                            <small class="card-text">La formation en ligne de Baccalauréat de l'E-media est bientôt disponible pour tous les Malagasy.</small>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -134,7 +132,7 @@
                             <?php
                                 date_default_timezone_set('UTC');
                                 $date = date('d-m-y');
-                                $url = 'http://newsapi.org/v2/everything?q=technologie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                                $url = 'http://newsapi.org/v2/everything?q=technologie&from=".$date."&language=fr&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
                                 $response = file_get_contents($url);
                                 $NewsData = json_decode($response); 
                         
@@ -162,7 +160,7 @@
                             <?php
                             date_default_timezone_set('UTC');
                             $date = date('d-m-y');
-                            $url = 'http://newsapi.org/v2/everything?q=santé&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                            $url = 'http://newsapi.org/v2/everything?q=santé&from=".$date."&language=fr&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
                             $response = file_get_contents($url);
                             $NewsData = json_decode($response); 
                         
@@ -189,7 +187,7 @@
                             <?php
                             date_default_timezone_set('UTC');
                             $date = date('d-m-y');
-                            $url = 'http://newsapi.org/v2/everything?q=economie&from=".$date."&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                            $url = 'http://newsapi.org/v2/everything?q=economie&from=".$date."&language=fr&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
                             $response = file_get_contents($url);
                             $NewsData = json_decode($response); 
                         
@@ -217,6 +215,35 @@
                     
             </div>
         </div>
+        <!--Nos frmations-->
+        <div class="formation" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="mt-5">
+                <img class="choisir img-fluid mt-5" src="img/accueil/71382219_1113234622208342_1065529829350178816_o.jpg" alt="">
+            </div>
+            <div class="container">
+            <div class="row">
+                <div class="col-4" align="center">
+                    <div class=" pres col-9">
+                        <h3>Université en Présentielle</h3>
+                        <a class="mt-5" href="#">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="col-4" align="center">
+                    <div class="ligne col-9">
+                        <h3>Université en ligne</h3>
+                        <a class="mt-5" href="#">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="col-4" align="center">
+                    <div class="cfp col-9">
+                        <h3>formation professionnelle</h3>
+                        <a class="mt-5" href="#">En savoir plus</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
 
         <!--media-->
         <div class="row media">
@@ -230,12 +257,6 @@
                 <iframe width="90%" class="iframe-media2" src="https://www.youtube.com/embed/uZO3QTWmNfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="90%" class="iframe-media3" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
-
-        <!--Nos frmations-->
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illum voluptatum assumenda magni ipsam rem quo exercitationem quidem aperiam delectus, repudiandae nihil odit consectetur aliquam eveniet fugiat sed natus dolor!</h6>
-            <h1>TEST</h1>
         </div>
     </div>
 

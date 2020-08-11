@@ -112,7 +112,65 @@ ul li .fa {
   background-position-x: -200px;
   background-position-y: -60px;
 }
-
+/*formation*/
+.formation{
+  height: 125vh;
+}
+.choisir{
+  image-orientation: flip;
+}
+.pres {
+  background-color: #087099;
+  margin-top: -5rem;
+  padding-top: 11rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  width: 15rem !important;
+  color: white;
+}
+.pres a {
+  text-decoration: none !important;
+  color: white;
+  border-radius: 3px;
+  padding: 0.3rem;
+  border-style: solid;
+  border: 0.5px solid white;
+}
+.ligne a {
+  text-decoration: none !important;
+  color: white;
+  border-radius: 3px;
+  padding: 0.3rem;
+  border-style: solid;
+  border: 0.5px solid white;
+}
+.cfp a {
+  text-decoration: none !important;
+  color: white;
+  border-radius: 3px;
+  padding: 0.3rem;
+  border-style: solid;
+  border: 0.5px solid white;
+}
+.ligne{
+  background-color: #189cd0;
+  margin-top: -3rem;
+  padding-top: 13rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  width: 15rem !important;
+  color: white;
+}
+.cfp{
+  background-color: #0c98cf;
+  margin-top: -4rem;
+  padding-top: 12rem;
+  padding-bottom: 2rem;
+  border-radius: 10px;
+  width: 15rem !important;
+  color: white;
+}
+/*fin formation*/
 /*apropos*/
 .apropos {
   height: 100vh;
@@ -138,7 +196,7 @@ ul li .fa {
   font-size: 4rem;
   font-weight: bold;
   line-height: 100px;
-  color: #189cd0;
+  color: #000000d2;
 }
 
 .apropos-right h1 span {
@@ -159,74 +217,11 @@ ul li .fa {
 
 /*actualites*/
 .title h1{
-  color: #189cd0;
+  color: #000000d2;
   font-size: 4rem;
   font-weight: bold;
-  line-height: 100px;
-  text-align: center;
 }
 
-.univ-enline::before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19);
-  transition: all ease-in-out 1s;
-  z-index: 2;
-  opacity: 0;
-  transform: translateX(-550px);
-}
-
-.univ-enline .univ-info {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 3;
-  transition: all ease-in-out 0.6s;
-}
-
-.univ-enline .univ-info h4 {
-  text-align: center;
-  color: #fff;
-  font-weight: bold;
-}
-
-.univ-enline .univ-info p {
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-}
-
-.univ-enline:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.univ-enline:hover .univ-info {
-  opacity: 1;
-  top: calc(50% - 48px);
-}
-
-.bacc-enline .bacc-info h4 {
-  text-align: center;
-  background: #189cd0;
-  color: #fff;
-  font-size: 4rem;
-  font-weight: bold;
-  line-height: 150px;
-  transition: all .8s ease;
-}
 
 /*google news*/
 .google-news ul {
@@ -322,10 +317,9 @@ ul li .fa {
   padding-top: 6.5rem;
 }
 .media h1{
-  color: #189cd0;
+  color: #000000d2;
   font-size: 4rem;
   font-weight: bold;
-  line-height: 100px;
 }
 .iframe-media{
   height: 76vh;
