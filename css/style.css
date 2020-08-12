@@ -222,6 +222,37 @@ ul li .fa {
   font-weight: bold;
 }
 
+.card {
+  border: none !important;
+}
+
+.card-body {
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
+  transition: .8s;
+}
+
+.card .card-title {
+  text-align: center;
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+
+.card .card-text {
+  font-size: 16px !important;
+  color: gray;
+}
+
+.card:hover .card-body {
+  background-color: #189cd0;
+}
+
+.card:hover .card-title {
+  color: #ffffff !important;
+}
+
+.card:hover .card-text {
+  color: #ffffff !important;
+}
 
 /*google news*/
 .google-news ul {
@@ -256,6 +287,7 @@ ul li .fa {
 
 .tab-content {
   height: 70vh;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
 }
 
 .news{
