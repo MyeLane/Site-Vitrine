@@ -92,14 +92,14 @@
                     <div class="col-12 title ml-5 mt-5">
                         <h1 class="mt-4"><span class="banner-media">Nos</span> actualités</h1>
                     </div>
-                    <div class="card col-5 mt-5">
+                    <div class="card col-6 mt-5">
                         <img class="card-img-top" src="img/accueil/emedia pour site 2.jpg" class="img-fluid" alt="universite">
                         <div class="card-body">
                             <h5 class="card-title">Formation Universitaire en ligne</h5>
                             <small class="card-text">La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophones.</small>
                         </div>
                     </div>
-                    <div class="card col-5 mt-5">
+                    <div class="card col-6 mt-5">
                         <img class="card-img-top" src="img/accueil/alefa sita-01.jpg" class="img-fluid" alt="universite">
                         <div class="card-body">
                             <h5 class="card-title">Formation baccalauréat en ligne</h5>
