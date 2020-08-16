@@ -1,0 +1,40 @@
+<FilesMatch ".(htaccess|ini|phps|fla|psd|log|sh)$">
+
+Order Allow,Deny
+
+Deny from all
+
+</FilesMatch>
+
+
+AddType application/octet-stream .pdf
+
+AddType application/octet-stream .zip
+
+AddType application/octet-stream .mp3
+
+AddType application/octet-stream .mp4
+
+AddType application/octet-stream .npg
+
+AddType application/octet-stream .jpg
+
+
+Options All -Indexes
+
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteCond %{REQUEST_URI} !/$ 
+RewriteRule ^(.*)$ $1\.php
+RewriteRule ^Error$ vue/error_404.php [L]
+RewriteRule ^Error403$ vue/error_403.php [L]
+RewriteRule ^Error500$ vue/error_500.php [L]
+
+
+
+
+ErrorDocument 404 https://e-media.mg/universite/Error
+ErrorDocument 403 https://e-media.mg/universite/Error403
+ErrorDocument 500 https://e-media.mg/universite/Error500
