@@ -216,32 +216,40 @@
             </div>
         </div>
         <!--Nos frmations-->
-        <div class="formation" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="formation" >
             <div class="mt-5">
                 <img class="choisir img-fluid mt-5" src="img/accueil/71382219_1113234622208342_1065529829350178816_o.jpg" alt="">
             </div>
             <div class="container">
-            <div class="row">
-                <div class="col-4" align="center">
-                    <div class=" pres col-9">
-                        <h3>Université en Présentielle</h3>
-                        <a class="mt-5" href="#">En savoir plus</a>
+                <div class="row">
+                    <div class="col-4" align="center">
+                        <div class=" pres col-9">
+                            <div class="icon-formation">
+                                <i class="mt-5 fas fa-user-graduate"></i>
+                            </div>
+                            <h3 class="mt-5">Université en Présentielle</h3>
+                            <a class="mt-5" href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="col-4" align="center">
+                        <div class="ligne col-9">
+                            <div class="icon-formation">
+                                <i class="mt-5 fab fa-audible"></i>
+                            </div>
+                            <h3 class="mt-5">Université en ligne</h3>
+                            <a class="mt-5" href="#">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="col-4" align="center">
+                        <div class="cfp col-9">
+                            <div class="icon-formation">
+                                <i class="mt-5 fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="mt-5">Formation professionnelle</h3>
+                            <a class="mt-5" href="#">En savoir plus</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4" align="center">
-                    <div class="ligne col-9">
-                        <h3>Université en ligne</h3>
-                        <a class="mt-5" href="#">En savoir plus</a>
-                    </div>
-                </div>
-                <div class="col-4" align="center">
-                    <div class="cfp col-9">
-                        <h3>formation professionnelle</h3>
-                        <a class="mt-5" href="#">En savoir plus</a>
-                    </div>
-                </div>
-                </div>
-            </div>
             </div>
         </div>
 
@@ -256,6 +264,82 @@
             <div class="col-4 aos-init aos-animate code code--small code--right" data-aos="fade-up-left" data-aos-duration="2000">
                 <iframe width="90%" class="iframe-media2" src="https://www.youtube.com/embed/uZO3QTWmNfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="90%" class="iframe-media3" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--Nos objectifs-->
+        <div class="objectifs container mt-5">
+            <h1 align="center"><span class="banner-media">Nos</span> objectifs</h1>
+            <div class="row">
+                <div class="col-6 mt-5">
+                    <img src="img/objectif/1.jpg" class="img-fluid col-10" alt="">
+                </div>
+                <div class="col-6 mt-5">
+                    <div class="col-10 float-right">
+                        <h2 class="mt-4 text-justify">Ouverture de l’établissement sur le plan international</h2>
+                        <p class="text-justify mt-3">Le but de l’ouverture à l’international est d’aligner les formations dispensées au sein de l’établissement avec ceux des grands établissements reconnus mondialement</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 mt-5">
+                    <div class="col-11">
+                        <h2 class="mt-4 text-justify">La construction d’un nouveau bâtiment</h2>
+                        <p class="text-justify mt-3">La construction d’un bâtiment a pour finalité d’offrir environnement propice à l’épanouissement des étudiants. Doté de toutes les commodités nécessaires pour un apprentissage enrichissant et digne.</p>
+                    </div>
+                </div>
+                <div class="col-6 mt-5">
+                    <img src="img/objectif/2.jpg" class="img-fluid float-right col-11" alt="">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 mt-5">
+                    <img src="img/objectif/3.jpg" class="img-fluid col-11" alt="">
+                </div>
+                <div class="col-6 mt-5">
+                    <div class="col-10 float-right">
+                        <h2 class="mt-4 text-justify">Mise à la disposition des étudiants des équipements à la pointe de la technologie</h2>
+                        <p class="text-justify mt-3">L’établissement met un point d’honneur à se doter des matériels et équipements nécessaires pour parfaire la formation qu’elle dispense.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 mt-5">
+                    <div class="col-11">
+                        <h2 class="mt-4 text-justify">L’acquisition de la norme ISO 9001-2015</h2>
+                        <p class="text-justify mt-3">La norme ISO 9001-2015, en rapport avec le management qualité a pour but d’assurer la satisfaction des clients , notamment les étudiants, et ainsi de devenir la première institution sur la Grande Ile à jouir de la norme ISO.</p>
+                    </div>
+                </div>
+                <div class="col-6 mt-5">
+                    <img src="img/objectif/iso.jpg" class="img-fluid float-right col-11" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="contact container" id="contact">
+            <h1 class="banner-media mt-5" align="center">Contact</h1>
+            <div class="row d-flex justify-content-center">
+                <div class="col-3 row contact-container mt-3 mb-5">
+                    <i class="mt-5 col-2 icon-contact far fa-map"></i>
+                    <div class="col-10">
+                        <h3>Adresse</h3>
+                        <small>Lot II Y 33 Bis P Ampasanimalo Tsiadana-route de l'université-Immeuble bleu</small>
+                    </div>
+                </div>
+                <div class="col-4 row contact-container ml-5 mt-3 mb-5">
+                    <i class="mt-5 col-2 icon-contact fas fa-envelope"></i>
+                    <div class="col-10">
+                        <h3>Email</h3>
+                        <small>emedia.cfp.emedia@gmail.com<br>scolarite.universite.emedia@gmail.com</small>
+                    </div>
+                </div>
+                <div class="col-3 ml-5 row contact-container mt-3 mb-5">
+                    <i class="mt-5 col-2 icon-contact fas fa-business-time"></i>
+                    <div class="col-10">
+                        <h3>ouverture</h3>
+                        <small>Lundi au Vendredi: 7h à 17h</small>
+                        <small>Samedi: 8h à 12h</small><br>
+                        <small>Dimanche: Fermé</small>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
