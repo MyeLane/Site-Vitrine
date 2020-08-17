@@ -119,13 +119,14 @@ ul li .fa {
 .choisir{
   image-orientation: flip;
 }
+.icon-formation i {
+  font-size: 4rem;
+}
 .pres {
   background-color: #087099;
   margin-top: -5rem;
-  padding-top: 11rem;
-  padding-bottom: 2rem;
+  height: 20rem;
   border-radius: 10px;
-  width: 15rem !important;
   color: white;
 }
 .pres a {
@@ -153,21 +154,17 @@ ul li .fa {
   border: 0.5px solid white;
 }
 .ligne{
-  background-color: #189cd0;
-  margin-top: -3rem;
-  padding-top: 13rem;
-  padding-bottom: 2rem;
+  background-color: #087099;
+  margin-top: -5rem;
+  height: 20rem;
   border-radius: 10px;
-  width: 15rem !important;
   color: white;
 }
 .cfp{
-  background-color: #0c98cf;
-  margin-top: -4rem;
-  padding-top: 12rem;
-  padding-bottom: 2rem;
+  background-color: #087099;
+  margin-top: -5rem;
+  height: 20rem;
   border-radius: 10px;
-  width: 15rem !important;
   color: white;
 }
 /*fin formation*/
@@ -363,4 +360,19 @@ ul li .fa {
 }
 .iframe-media3{
   height: 37vh;
+}
+/*objectifs*/
+.objectifs h1 {
+  color: #000000d2;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.contact h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.contact-container{
+  padding: 1rem;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
+  width: 9rem;
 }
