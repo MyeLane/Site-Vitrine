@@ -1,3 +1,16 @@
+<?php 
+
+function dateToFrench($date, $format)
+{
+    $english_days = array('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+    $french_days = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche');
+    $english_months = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+    $french_months = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
+    return str_replace($english_months, $french_months, str_replace($english_days, $french_days, date($format, strtotime($date))));
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -147,8 +160,8 @@
                                     <div class="col-8 information">
                                         <h6><?php echo $News->title; ?></h6>
                                         <div class="top-solid mb-1"></div>
-                                        <small class="p-1">Date de publication: <?php echo $News->publishedAt ?></small>
-                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_top">Voir plus</a>
+                                        <small class="p-1">Date de publication: <?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
                                     </div>
                                 </div>
                             <?php 
@@ -175,8 +188,8 @@
                                     <div class="col-8 information">
                                         <h6><?php echo $News->title; ?></h6>
                                         <div class="top-solid mb-1"></div>
-                                        <small class="p-1">Date de publication: <?php echo $News->publishedAt ?></small>
-                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_top">Voir plus</a>
+                                        <small class="p-1">Date de publication: <?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
                                     </div>
                                 </div>
                             <?php 
@@ -202,8 +215,8 @@
                                     <div class="col-8 information">
                                         <h6><?php echo $News->title; ?></h6>
                                         <div class="top-solid mb-1"></div>
-                                        <small class="p-1">Date de publication: <?php echo $News->publishedAt ?></small>
-                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_top">Voir plus</a>
+                                        <small class="p-1">Date de publication: <?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
                                     </div>
                                 </div>
                             <?php 
