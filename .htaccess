@@ -28,10 +28,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteCond %{REQUEST_URI} !/$ 
 RewriteRule ^(.*)$ $1\.php
+
 RewriteRule ^Error$ vue/error_404.php [L]
 RewriteRule ^Error403$ vue/error_403.php [L]
 RewriteRule ^Error500$ vue/error_500.php [L]
-
 
 
 
