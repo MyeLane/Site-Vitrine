@@ -140,7 +140,7 @@ function dateToFrench($date, $format)
                         </li>
                     </ul>
                     
-                    <div class="tab-content col-12 overflow-auto" id="pills-tabContent">
+                    <div class="tab-content tab-actualite col-12 overflow-auto" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <?php
                                 date_default_timezone_set('UTC');
