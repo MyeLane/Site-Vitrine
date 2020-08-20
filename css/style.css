@@ -13,7 +13,7 @@ a {
 }
 
 .main-menu {
-  background-color: #189cd0;
+  background-color: #fff;
   z-index: 99;
   transition: .5s;
 }
@@ -21,7 +21,7 @@ a {
 .main-menu a{
   text-decoration: none;
   position: relative;
-  color: #ffffff;
+  color: #0000009d;
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%);
@@ -49,8 +49,92 @@ a {
   font-size: medium;
 }
 
+ul li a {
+  font-size: 18px !important;
+  font-weight: bold;
+  line-height: 30px !important;
+}
+
 ul li .fa {
   font-size: 20px;
+}
+
+/*tooltip*/
+.nav-seconnecter {
+  position: relative;
+}
+
+.nav-seconnecter::before{
+    --scale: 0;
+    --arrow-size: 10px;
+    --tooltip-color: #ffffff;
+    position: absolute;
+    right: -35%;
+    top: 3.4rem;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: 150ms;
+    transform-origin: right center;
+}
+
+.nav-seconnecter::after {
+  --scale: 0;
+    --arrow-size: 10px;
+    --tooltip-color: #189cd0;
+    position: absolute;
+    right: 10%;
+    top: .8rem;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale)) rotate(270deg);
+    transition: 150ms;
+    transform-origin: bottom center;
+}
+
+.nav-seconnecter::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+    content: attr(data-tooltip);
+    color: #ffffff;
+    background-color: #189cd0;
+    padding: .5rem;
+    width: max-content;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav-seconnecter:hover::before, 
+.nav-seconnecter:hover::after {
+    --scale: 1;
+}
+
+.nav-seconnecter::after {
+    --translate-y: calc(-1 * var(--arrow-size));
+    content: '';
+    border: var(--arrow-size) solid transparent;
+    border-top-color: var(--tooltip-color);
+}
+
+.bottom-solid {
+  justify-content: center;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #189cd0;
+  transform: scaleX(0);
+  transition: 0.4s linear;
+  transform-origin: left;
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover {
+  color: gray !important;
+}
+
+.navbar-collapse .navbar-nav .nav-link.active {
+  color: #189cd0 !important;
+}
+
+.navbar-collapse ul li:hover .bottom-solid {
+  transform: scaleX(1);
 }
 
 /*section*/
@@ -62,6 +146,7 @@ ul li .fa {
   font-size: 5rem !important;
   font-weight: bold;
   line-height: 120px;
+  
 }
 
 .banner h4 {
@@ -116,6 +201,13 @@ ul li .fa {
 .formation{
   height: 125vh;
 }
+
+.formation h1 {
+  font-size: 4rem !important;
+  font-weight: bold;
+  line-height: 120px;
+}
+
 .choisir{
   image-orientation: flip;
 }
@@ -124,7 +216,7 @@ ul li .fa {
 }
 .pres {
   background-color: #087099;
-  margin-top: -5rem;
+  margin-top: -7rem;
   height: 20rem;
   border-radius: 10px;
   color: white;
@@ -155,17 +247,36 @@ ul li .fa {
 }
 .ligne{
   background-color: #087099;
-  margin-top: -5rem;
+  margin-top: -3rem;
   height: 20rem;
   border-radius: 10px;
   color: white;
 }
 .cfp{
   background-color: #087099;
-  margin-top: -5rem;
+  margin-top: -7rem;
   height: 20rem;
   border-radius: 10px;
   color: white;
+}
+
+.pres h3, .ligne h3, .cfp h3 {
+  font-size: 30px !important;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.pres:hover .savoir-plus a, .ligne:hover .savoir-plus a, .cfp:hover .savoir-plus a {
+  margin-left: 30px;
+}
+
+.savoir-plus a {
+  border: 2px solid !important;
+  transition: .5s;
+}
+
+.savoir-plus a:hover {
+  color: #fff;
 }
 /*fin formation*/
 /*apropos*/
@@ -258,20 +369,6 @@ ul li .fa {
   padding-right: 1px;
 }
 
-.bottom-solid {
-  justify-content: center;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: #189cd0;
-  transform: scaleX(1);
-  transition: 0.4s linear;
-  transform-origin: left;
-}
-
 .nav-pills .nav-link.active{
   background-color: #189cd0 !important;
 }
@@ -283,7 +380,7 @@ ul li .fa {
 }
 
 .tab-actualite {
-  height: 70vh;
+  height: 85vh;
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
 }
 
@@ -346,6 +443,7 @@ ul li .fa {
   padding-top: 6.5rem;
 }
 .media h1{
+  letter-spacing: 0px;
   color: #000000d2;
   font-size: 4rem;
   font-weight: bold;
@@ -367,12 +465,63 @@ ul li .fa {
   font-size: 4rem;
   font-weight: bold;
 }
+
+.objectif-text {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.objectifs .objectif-text:nth-child(1) {
+  background: #189cd0;
+}
+
+.objectifs .objectif-text:nth-child(1) h2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.objectifs .objectif-text:nth-child(1) p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.objectifs .objectif-text:nth-child(2) h2 {
+  font-size: 40px;
+}
+
+.objectifs .objectif-text:nth-child(2) p {
+  font-size: 20px;
+  color: gray;
+}
+
+/*cotacts*/
 .contact h1 {
   font-size: 4rem;
   font-weight: bold;
 }
-.contact-container{
-  padding: 1rem;
+
+.icon-contact {
+  font-size: 20px;
+  color: #fff;
+  background: #189cd0;
+  border-radius: 50%;
+}
+
+.contact-container h3 {
+  font-weight: bold;
+  line-height: 80px;
+}
+
+.contact-container p {
+  color: gray;
+}
+
+/*footer*/
+footer {
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
-  width: 9rem;
+}
+
+footer div {
+  font-weight: bold !important; 
+  line-height: 30px !important;
+  color: #189cd0 !important;
 }
