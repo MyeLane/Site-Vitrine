@@ -27,6 +27,7 @@ function dateToFrench($date, $format)
 
 <body>
 
+    <!--https://www.youtube.com/watch?v=MubsuxA72yU-->
     <section>
         <div class="container-fluid mt-5">
             <div class="row banner ml-5 mt-5">
@@ -54,7 +55,7 @@ function dateToFrench($date, $format)
     <div id="header" class="main-menu">
         <nav class="navbar navbar-expand-lg">
             <div class="ml-5">
-                    <img id="LogoMenu" src="img/accueil/logo E-media.png" alt="logo">
+                <img id="LogoMenu" src="img/accueil/logo E-media.png" alt="logo">
             </div>
             <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -63,11 +64,11 @@ function dateToFrench($date, $format)
             </button>
             <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Actualite">Actualité</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item ml-2"><a class="nav-link" href="#lien"><i class="fa fa-user"></i></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#accueil">Accueil<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#Actualite">Actualité<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#formation">Formation<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#contact">Contact<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item ml-2 nav-seconnecter" data-tooltip="Se connecter"><a class="nav-link" href="#lien"><i class="fa fa-user"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -160,7 +161,7 @@ function dateToFrench($date, $format)
                                     <div class="col-8 information">
                                         <h6><?php echo $News->title; ?></h6>
                                         <div class="top-solid mb-1"></div>
-                                        <small class="p-1">Date de publication: <?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <small class="p-1" align="center"><?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
                                         <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
                                     </div>
                                 </div>
@@ -188,7 +189,7 @@ function dateToFrench($date, $format)
                                     <div class="col-8 information">
                                         <h6><?php echo $News->title; ?></h6>
                                         <div class="top-solid mb-1"></div>
-                                        <small class="p-1">Date de publication: <?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <small class="p-1"><?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
                                         <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
                                     </div>
                                 </div>
@@ -215,7 +216,7 @@ function dateToFrench($date, $format)
                                     <div class="col-8 information">
                                         <h6><?php echo $News->title; ?></h6>
                                         <div class="top-solid mb-1"></div>
-                                        <small class="p-1">Date de publication: <?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <small class="p-1"><?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
                                         <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
                                     </div>
                                 </div>
@@ -228,46 +229,66 @@ function dateToFrench($date, $format)
                     
             </div>
         </div>
+
         <!--Nos frmations-->
-        <div class="formation" >
-            <div class="mt-5">
-                <img class="choisir img-fluid mt-5" src="img/accueil/71382219_1113234622208342_1065529829350178816_o.jpg" alt="">
+        <div class="formation mt-5">
+            <h1 class="ml-5"><span class="banner-media">Nos</span> formation</h1>
+            <div class="">
+                <img class="choisir img-fluid" src="img/accueil/71382219_1113234622208342_1065529829350178816_o.jpg" alt="">
             </div>
             <div class="container">
                 <div class="row">
+
                     <div class="col-4" align="center">
                         <div class=" pres col-9">
                             <div class="icon-formation">
                                 <i class="mt-5 fas fa-user-graduate"></i>
                             </div>
-                            <h3 class="mt-5">Université en Présentielle</h3>
-                            <a class="mt-5" href="#">En savoir plus</a>
+                            <div class="mt-5">
+                                <h3 class="card-titre">Université en Présentielle</h3>
+                                <div class="mt-3 savoir-plus">
+                                    <a class="" href="#">En savoir plus</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                     <div class="col-4" align="center">
                         <div class="ligne col-9">
                             <div class="icon-formation">
                                 <i class="mt-5 fab fa-audible"></i>
                             </div>
-                            <h3 class="mt-5">Université en ligne</h3>
-                            <a class="mt-5" href="#">En savoir plus</a>
+                            <div class="mt-5">
+                                <h3 class="card-titre">Université en ligne</h3>
+                                <div class="mt-3 savoir-plus">
+                                    <a href="#">En savoir plus</a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
+
                     <div class="col-4" align="center">
                         <div class="cfp col-9">
                             <div class="icon-formation">
                                 <i class="mt-5 fas fa-graduation-cap"></i>
                             </div>
-                            <h3 class="mt-5">Formation professionnelle</h3>
-                            <a class="mt-5" href="#">En savoir plus</a>
+                            <div class="mt-5">
+                                <h3 class="card-titre">Formation professionnelle</h3>
+                                <div class="mt-3 savoir-plus">
+                                    <a href="#">En savoir plus</a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <!--media-->
-        <div class="row media">
+        <div class="row media mt-5">
             <div class="col-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-left" data-aos-duration="2000">
                 <h1>Vidéo Formation de l'<span class="banner-media">E-media</span></h1>
             </div>
@@ -279,83 +300,121 @@ function dateToFrench($date, $format)
                 <iframe width="90%" class="iframe-media3" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
+
         <!--Nos objectifs-->
-        <div class="objectifs container mt-5">
+        <div class="objectifs container-fluid mt-5">
             <h1 align="center"><span class="banner-media">Nos</span> objectifs</h1>
-            <div class="row">
-                <div class="col-6 mt-5">
+
+            <div class="row mt-3">
+                <div class="col-6 mt-5 img-objectif">
                     <img src="img/objectif/1.jpg" class="img-fluid col-10" alt="">
                 </div>
-                <div class="col-6 mt-5">
-                    <div class="col-10 float-right">
-                        <h2 class="mt-4 text-justify">Ouverture de l’établissement sur le plan international</h2>
+
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">Ouverture de l’établissement sur le plan international</h2>
                         <p class="text-justify mt-3">Le but de l’ouverture à l’international est d’aligner les formations dispensées au sein de l’établissement avec ceux des grands établissements reconnus mondialement</p>
                     </div>
                 </div>
             </div>
+
             <div class="row mt-5">
-                <div class="col-6 mt-5">
-                    <div class="col-11">
-                        <h2 class="mt-4 text-justify">La construction d’un nouveau bâtiment</h2>
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">La construction d’un nouveau bâtiment</h2>
                         <p class="text-justify mt-3">La construction d’un bâtiment a pour finalité d’offrir environnement propice à l’épanouissement des étudiants. Doté de toutes les commodités nécessaires pour un apprentissage enrichissant et digne.</p>
                     </div>
                 </div>
-                <div class="col-6 mt-5">
+                <div class="col-6 mt-5 img-objectif">
                     <img src="img/objectif/2.jpg" class="img-fluid float-right col-11" alt="">
                 </div>
             </div>
+            
             <div class="row mt-5">
-                <div class="col-6 mt-5">
+                <div class="col-6 mt-5 img-objectif">
                     <img src="img/objectif/3.jpg" class="img-fluid col-11" alt="">
                 </div>
-                <div class="col-6 mt-5">
-                    <div class="col-10 float-right">
-                        <h2 class="mt-4 text-justify">Mise à la disposition des étudiants des équipements à la pointe de la technologie</h2>
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">Mise à la disposition des étudiants des équipements à la pointe de la technologie</h2>
                         <p class="text-justify mt-3">L’établissement met un point d’honneur à se doter des matériels et équipements nécessaires pour parfaire la formation qu’elle dispense.</p>
                     </div>
                 </div>
             </div>
+
             <div class="row mt-5">
-                <div class="col-6 mt-5">
-                    <div class="col-11">
-                        <h2 class="mt-4 text-justify">L’acquisition de la norme ISO 9001-2015</h2>
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">L’acquisition de la norme ISO 9001-2015</h2>
                         <p class="text-justify mt-3">La norme ISO 9001-2015, en rapport avec le management qualité a pour but d’assurer la satisfaction des clients , notamment les étudiants, et ainsi de devenir la première institution sur la Grande Ile à jouir de la norme ISO.</p>
                     </div>
                 </div>
-                <div class="col-6 mt-5">
+                <div class="col-6 mt-5 img-objectif">
                     <img src="img/objectif/iso.jpg" class="img-fluid float-right col-11" alt="">
                 </div>
             </div>
+
         </div>
-        <div class="contact container" id="contact">
-            <h1 class="banner-media mt-5" align="center">Contact</h1>
+
+        <!-- contact -->
+        <div class="contact mt-5" id="contact">
+            <h1 align="center"><span class="banner-media mt-5">Nos </span>Contact</h1>
             <div class="row d-flex justify-content-center">
-                <div class="col-3 row contact-container mt-3 mb-5">
-                    <i class="mt-5 col-2 icon-contact far fa-map"></i>
-                    <div class="col-10">
+            
+                <div class="col-4 row contact-container mt-3 mb-5">
+                    <div class="col-3 m-3">
+                        <i class="icon-contact p-4 fas fa-map"></i>
+                    </div>
+
+                    <div class="col-7">
                         <h3>Adresse</h3>
-                        <small>Lot II Y 33 Bis P Ampasanimalo Tsiadana-route de l'université-Immeuble bleu</small>
+                    </div>
+
+                    <div class="col-12 ml-2">
+                        <p>Lot II Y 33 Bis P Ampasanimalo Tsiadana-route de l'université-Immeuble bleu</p>
                     </div>
                 </div>
-                <div class="col-4 row contact-container ml-5 mt-3 mb-5">
-                    <i class="mt-5 col-2 icon-contact fas fa-envelope"></i>
-                    <div class="col-10">
+
+                <div class="col-4 row contact-container mt-3 mb-5">
+                    <div class="col-3 m-3">
+                        <i class="icon-contact p-4 fas fa-envelope"></i>
+                    </div>
+
+                    <div class="col-7">
                         <h3>Email</h3>
-                        <small>emedia.cfp.emedia@gmail.com<br>scolarite.universite.emedia@gmail.com</small>
+                    </div>
+
+                    <div class="col-12 ml-2">
+                        <p>emedia.cfp.emedia@gmail.com<br>scolarite.universite.emedia@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-3 ml-5 row contact-container mt-3 mb-5">
-                    <i class="mt-5 col-2 icon-contact fas fa-business-time"></i>
-                    <div class="col-10">
-                        <h3>ouverture</h3>
-                        <small>Lundi au Vendredi: 7h à 17h</small>
-                        <small>Samedi: 8h à 12h</small><br>
-                        <small>Dimanche: Fermé</small>
+
+                <div class="col-4 row contact-container mt-3 mb-5">
+                    <div class="col-3 m-3">
+                        <i class="icon-contact p-4 fas fa-business-time"></i>
+                    </div>
+
+                    <div class="col-7">
+                        <h3>Ouverture</h3>
+                    </div>
+
+                    <div class="col-12 ml-2">
+                        <p>Lundi au Vendredi: 7h à 17h , 
+                        Samedi: 8h à 12h
+                        <br>et Dimanche: Fermé</p>
                     </div>
                 </div>
+
             </div>
         </div>
+
     </div>
+
+    <footer>
+            <div class="col-12 text-center p-2">
+                © Copyright E-MEDIA 2020
+            </div>
+    </fooer>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
