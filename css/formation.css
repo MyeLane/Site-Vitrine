@@ -1,0 +1,12 @@
+.tab-cfp{
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19) !important;
+  }
+.nav-pills .nav-link.active{
+    background-color: #189cd0 !important;
+  }
+  
+.nav-pills .nav-link{
+    background-color: #ffffff !important;
+    border-radius: 0rem !important;
+    padding: 1rem;
+  }

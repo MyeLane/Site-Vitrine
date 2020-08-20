@@ -1,3 +1,16 @@
+<?php 
+
+function dateToFrench($date, $format)
+{
+    $english_days = array('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+    $french_days = array('Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche');
+    $english_months = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+    $french_months = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
+    return str_replace($english_months, $french_months, str_replace($english_days, $french_days, date($format, strtotime($date))));
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -14,6 +27,7 @@
 
 <body>
 
+    <!--https://www.youtube.com/watch?v=MubsuxA72yU-->
     <section>
         <div class="container-fluid mt-5">
             <div class="row banner ml-5 mt-5">
@@ -41,7 +55,7 @@
     <div id="header" class="main-menu">
         <nav class="navbar navbar-expand-lg">
             <div class="ml-5">
-                    <img id="LogoMenu" src="img/accueil/logo E-media.png" alt="logo">
+                <img id="LogoMenu" src="img/accueil/logo E-media.png" alt="logo">
             </div>
             <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -50,11 +64,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Actualite">Actualité</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#formation">Formation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item ml-2"><a class="nav-link" href="#lien"><i class="fa fa-user"></i></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#accueil">Accueil<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#Actualite">Actualité<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#formation">Formation<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#contact">Contact<span class="bottom-solid"></span></a></li>
+                    <li class="nav-item ml-2 nav-seconnecter" data-tooltip="Se connecter"><a class="nav-link" href="#lien"><i class="fa fa-user"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -63,13 +77,13 @@
     <div class="container-fluid contenu">
 
         <!--apropos-->
-        <div class="row apropos mt-5 ml-5">
+        <div class="row apropos mt-3 ml-5">
             <div class="col-4 apropos-left mt-5 aos-init aos-animate code code--small code--up" data-aos="fade-up" data-aos-duration="2000">
-                <img src="img/accueil/apropos2.jpg" alt="" class="img-fluid">
+                <img src="img/accueil/apropos2.jpg" alt="" class="img-fluid mt-5">
             </div>
 
             <div class="col-8 apropos-right">
-                <h1 class="ml-5 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span>E-media</span></h1>
+                <h1 class="ml-5 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span class="banner-media">E-media</span></h1>
                 <div class="row">
                     <div class="cree col-6 mt-4 aos-init aos-animate code code--small code--left" data-aos="zoom-in" data-aos-duration="2000">
                         <span>Crée en 2011, E-MEDIA est actuellement un établissement de référence et un acteur incontournable dans le domaine de la formation à Madagascar et notamment en Afrique francophone.
@@ -87,174 +101,194 @@
 
         <!--actulites-->
         <div class="row actualites mt-5">
-
-            <div class="col-12 text-center title mt-5">
-                <h1>Actualités</h1>
+            <div class="col-8">
+                <div class="row card-deck">
+                    <div class="col-12 title ml-5 mt-5">
+                        <h1 class="mt-4"><span class="banner-media">Nos</span> actualités</h1>
+                    </div>
+                    <div class="card col-6 mt-5">
+                        <img class="card-img-top" src="img/accueil/emedia pour site 2.jpg" class="img-fluid" alt="universite">
+                        <div class="card-body">
+                            <h5 class="card-title">Formation Universitaire en ligne</h5>
+                            <small class="card-text">La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophones.</small>
+                        </div>
+                    </div>
+                    <div class="card col-6 mt-5">
+                        <img class="card-img-top" src="img/accueil/alefa sita-01.jpg" class="img-fluid" alt="universite">
+                        <div class="card-body">
+                            <h5 class="card-title">Formation baccalauréat en ligne</h5>
+                            <small class="card-text">La formation en ligne de Baccalauréat de l'E-media est bientôt disponible pour tous les Malagasy.</small>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-4 univ-enline mt-5">
-                <div class="col-12 img-univ">
-
-                    <p class="info-univ">La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophones. </p>
-                </div>
-
-                <div class="col-12 text text-center mt-4 d-none">
-                    <h4>FORMATION UNIVERSITAIRE EN LIGNE (e-learning)</h4>
-                </div>
-            </div>
-
-            <div class="col-4 bacc-enline mt-5 text-center">
-                <div class="col-12 img-bacc">
-
-                </div>
-
-                <div class="col-12 text mt-5 d-none">
-                    <h4>FORMATION BACC EN LIGNE <br>(e-learning)</h4>
-                </div>
-
-            </div>
-
-            <div class="col-4 google-news">
-                <div class="row">
-                    <ul class="col-12 d-flex text-center">
-                        <li class="col-4 active pt-2 pb-2">
-                            <a href="#" id="open-sante" class="news">
-                                <div class="title">Santés</div>
-                                <span class="bottom-solid"></span>
-                            </a>
+            <!--google news-->
+            <div class="col-4 google-news mt-5">
+                <div class="row mt-5">
+                    <ul class="nav nav-pills col-12 nav-justified mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active news " id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Technologie</a>
+                            <span class="bottom-solid"></span>
                         </li>
-                        <li class="col-4 pt-2 pb-2">
-                            <a href="#" id="open-science" class="news">
-                                <div class="title">Sciences</div>
-                                <span class="bottom-solid"></span>
-                            </a>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link news" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Santé</a>
+                            <span class="bottom-solid"></span>
                         </li>
-                        <li class="col-4 pt-2 pb-2">
-                            <a href="#" id="open-techno" class="news">
-                                <div class="title">Technologies</div>
-                                <span class="bottom-solid"></span>
-                            </a>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link news" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Economie</a>
+                            <span class="bottom-solid"></span>
                         </li>
                     </ul>
-
-                    <!--google news-->
-                    <!--sante-->
-                    <div class="col-12" id="open-sante">
-                        <?php
-                            $newsTable = 'health';
-                            date_default_timezone_set('UTC');
-                            $date = 'd-m-y';
-                            $url = 'http://newsapi.org/v2/everything?q='.$newsTable.'&from='.$date.'&language=fr&sortBy=publishedAt&pageSize=3&apiKey=a8ef73a0f34641f18ac14d7ff914fad6';
-                            $response = file_get_contents($url);
-                            $Newsdata = json_decode($response);
-
-                            foreach ($Newsdata->articles as $News) 
-                                {
-                                    $img = $News->urlToImage;
-                                    $title = $News->title;
-                                    $author = $News->author;
-                                    $description = $News->description;
-                                    $jour = $News->publishedAt;
-                                    $url = $News->url;
-                        ?>
-                                <div class="row mt-3 google-body">
-                                    <div class="col-4 image">
-                                        <img src="<?php echo $img ?>" class="img-fluid" alt="aucune img">
-                                    </div>
-
-                                    <div class="col-8 information">
-                                        <h6><?php echo $title ?></h6>
-                                        <div class="top-solid mb-1"></div>
-                                        <p class="p-1"><i class="fa fa-pen-fancy"></i><?php echo $author ?></p>
-                                        <small class="p-1">Date de publication:<?php echo $jour ?></small>
-                                        <a href="#" class="btn m-2" target="_top">Voir plus</a>
-                                    </div>
-                                </div>
-                            <?php 
-                                }
-                            ?>
-                    </div>
-
-                    <!--science-->
-                    <div class="col-12" id="open-science">
-                        <?php
-                            $newsTable = 'health';
-                            date_default_timezone_set('UTC');
-                            $date = 'd-m-y';
-                            $url = 'http://newsapi.org/v2/everything?q='.$newsTable.'&from='.$date.'&language=fr&sortBy=publishedAt&pageSize=3&apiKey=a8ef73a0f34641f18ac14d7ff914fad6';
-                            $response = file_get_contents($url);
-                            $Newsdata = json_decode($response);
-
-                            foreach ($Newsdata->articles as $News) 
-                                {
-                                    $img = $News->urlToImage;
-                                    $title = $News->title;
-                                    $author = $News->author;
-                                    $description = $News->description;
-                                    $jour = $News->publishedAt;
-                                    $url = $News->url;
-                        ?>
-                                <div class="row mt-3 google-body">
-                                    <div class="col-4 image">
-                                        <img src="<?php echo $img ?>" class="img-fluid" alt="aucune img">
-                                    </div>
-
-                                    <div class="col-8 information">
-                                        <h6><?php echo $title ?></h6>
-                                        <div class="top-solid mb-1"></div>
-                                        <p class="p-1"><i class="fa fa-pen-fancy"></i><?php echo $author ?></p>
-                                        <small class="p-1">Date de publication:<?php echo $jour ?></small>
-                                        <a href="#" class="btn m-2" target="_top">Voir plus</a>
-                                    </div>
-                                </div>
-                            <?php 
-                                }
-                            ?>
-                    </div>
-
-                    <!--technologie-->
-                    <div class="col-12" id="open-techno">
-                        <?php
-                            $newsTable = 'technology';
-                            date_default_timezone_set('UTC');
-                            $date = 'd-m-y';
-                            $url = 'http://newsapi.org/v2/everything?q='.$newsTable.'&from='.$date.'&language=fr&sortBy=publishedAt&pageSize=3&apiKey=a8ef73a0f34641f18ac14d7ff914fad6';
-                            $response = file_get_contents($url);
-                            $Newsdata = json_decode($response);
-
-                            foreach ($Newsdata->articles as $News) 
-                                {
-                                    $img = $News->urlToImage;
-                                    $title = $News->title;
-                                    $author = $News->author;
-                                    $description = $News->description;
-                                    $jour = $News->publishedAt;
-                                    $url = $News->url;
-                        ?>
-                                <div class="row mt-3 google-body">
-                                    <div class="col-4 image">
-                                        <img src="<?php echo $img ?>" class="img-fluid" alt="aucune img">
-                                    </div>
-
-                                    <div class="col-8 information">
-                                        <h6><?php echo $title ?></h6>
-                                        <div class="top-solid mb-1"></div>
-                                        <p class="p-1"><i class="fa fa-pen-fancy"></i><?php echo $author ?></p>
-                                        <small class="p-1">Date de publication:<?php echo $jour ?></small>
-                                        <a href="#" class="btn m-2" target="_top">Voir plus</a>
-                                    </div>
-                                </div>
-                            <?php 
-                                }
-                            ?>
-                    </div>
                     
+                    <div class="tab-content tab-actualite col-12 overflow-auto" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <?php
+                                date_default_timezone_set('UTC');
+                                $date = date('d-m-y');
+                                $url = 'http://newsapi.org/v2/everything?q=technologie&from=".$date."&language=fr&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                                $response = file_get_contents($url);
+                                $NewsData = json_decode($response); 
+                        
+                                foreach($NewsData->articles as $News)
+                                {          
+                            ?>
+                                <div class="row mt-3 google-body">
+                                    <div class="col-4 image">
+                                        <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
+                                    </div>
+
+                                    <div class="col-8 information">
+                                        <h6><?php echo $News->title; ?></h6>
+                                        <div class="top-solid mb-1"></div>
+                                        <small class="p-1" align="center"><?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
+                                    </div>
+                                </div>
+                            <?php 
+                                }
+                            ?>
+                
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <?php
+                            date_default_timezone_set('UTC');
+                            $date = date('d-m-y');
+                            $url = 'http://newsapi.org/v2/everything?q=santé&from=".$date."&language=fr&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                            $response = file_get_contents($url);
+                            $NewsData = json_decode($response); 
+                        
+                            foreach($NewsData->articles as $News)
+                                {          
+                            ?>
+                                <div class="row mt-3 google-body">
+                                    <div class="col-4 image">
+                                        <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
+                                    </div>
+
+                                    <div class="col-8 information">
+                                        <h6><?php echo $News->title; ?></h6>
+                                        <div class="top-solid mb-1"></div>
+                                        <small class="p-1"><?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
+                                    </div>
+                                </div>
+                            <?php 
+                                }
+                            ?>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <?php
+                            date_default_timezone_set('UTC');
+                            $date = date('d-m-y');
+                            $url = 'http://newsapi.org/v2/everything?q=economie&from=".$date."&language=fr&sortBy=publishedAt&apiKey=a8ef73a0f34641f18ac14d7ff914fad6 ';
+                            $response = file_get_contents($url);
+                            $NewsData = json_decode($response); 
+                        
+                            foreach($NewsData->articles as $News)
+                                {          
+                            ?>
+                                <div class="row mt-3 google-body">
+                                    <div class="col-4 image">
+                                        <img src="<?php echo $News->urlToImage ?>" class="img-fluid" alt="aucune img">
+                                    </div>
+
+                                    <div class="col-8 information">
+                                        <h6><?php echo $News->title; ?></h6>
+                                        <div class="top-solid mb-1"></div>
+                                        <small class="p-1"><?php echo dateToFrench($News->publishedAt,"l j F Y à H:i") ?></small>
+                                        <a href="<?php echo $News->url ?>" class="btn m-2" target="_blank">Voir plus</a>
+                                    </div>
+                                </div>
+                            <?php 
+                                }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+
+        <!--Nos frmations-->
+        <div class="formation mt-5">
+            <h1 class="ml-5"><span class="banner-media">Nos</span> formation</h1>
+            <div class="">
+                <img class="choisir img-fluid" src="img/accueil/71382219_1113234622208342_1065529829350178816_o.jpg" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-4" align="center">
+                        <div class=" pres col-9">
+                            <div class="icon-formation">
+                                <i class="mt-5 fas fa-user-graduate"></i>
+                            </div>
+                            <div class="mt-5">
+                                <h3 class="card-titre">Université en Présentielle</h3>
+                                <div class="mt-3 savoir-plus">
+                                    <a class="" href="#">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4" align="center">
+                        <div class="ligne col-9">
+                            <div class="icon-formation">
+                                <i class="mt-5 fab fa-audible"></i>
+                            </div>
+                            <div class="mt-5">
+                                <h3 class="card-titre">Université en ligne</h3>
+                                <div class="mt-3 savoir-plus">
+                                    <a href="#">En savoir plus</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-4" align="center">
+                        <div class="cfp col-9">
+                            <div class="icon-formation">
+                                <i class="mt-5 fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="mt-5">
+                                <h3 class="card-titre">Formation professionnelle</h3>
+                                <div class="mt-3 savoir-plus">
+                                    <a href="#">En savoir plus</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
         <!--media-->
-        <div class="row media">
+        <div class="row media mt-5">
             <div class="col-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-left" data-aos-duration="2000">
                 <h1>Vidéo Formation de l'<span class="banner-media">E-media</span></h1>
             </div>
@@ -267,11 +301,120 @@
             </div>
         </div>
 
-        <!--Nos frmations-->
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illum voluptatum assumenda magni ipsam rem quo exercitationem quidem aperiam delectus, repudiandae nihil odit consectetur aliquam eveniet fugiat sed natus dolor!</h6>
+        <!--Nos objectifs-->
+        <div class="objectifs container-fluid mt-5">
+            <h1 align="center"><span class="banner-media">Nos</span> objectifs</h1>
+
+            <div class="row mt-3">
+                <div class="col-6 mt-5 img-objectif">
+                    <img src="img/objectif/1.jpg" class="img-fluid col-10" alt="">
+                </div>
+
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">Ouverture de l’établissement sur le plan international</h2>
+                        <p class="text-justify mt-3">Le but de l’ouverture à l’international est d’aligner les formations dispensées au sein de l’établissement avec ceux des grands établissements reconnus mondialement</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">La construction d’un nouveau bâtiment</h2>
+                        <p class="text-justify mt-3">La construction d’un bâtiment a pour finalité d’offrir environnement propice à l’épanouissement des étudiants. Doté de toutes les commodités nécessaires pour un apprentissage enrichissant et digne.</p>
+                    </div>
+                </div>
+                <div class="col-6 mt-5 img-objectif">
+                    <img src="img/objectif/2.jpg" class="img-fluid float-right col-11" alt="">
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-6 mt-5 img-objectif">
+                    <img src="img/objectif/3.jpg" class="img-fluid col-11" alt="">
+                </div>
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">Mise à la disposition des étudiants des équipements à la pointe de la technologie</h2>
+                        <p class="text-justify mt-3">L’établissement met un point d’honneur à se doter des matériels et équipements nécessaires pour parfaire la formation qu’elle dispense.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-6 mt-5 objectif-text">
+                    <div class="col-12">
+                        <h2 class="mt-4">L’acquisition de la norme ISO 9001-2015</h2>
+                        <p class="text-justify mt-3">La norme ISO 9001-2015, en rapport avec le management qualité a pour but d’assurer la satisfaction des clients , notamment les étudiants, et ainsi de devenir la première institution sur la Grande Ile à jouir de la norme ISO.</p>
+                    </div>
+                </div>
+                <div class="col-6 mt-5 img-objectif">
+                    <img src="img/objectif/iso.jpg" class="img-fluid float-right col-11" alt="">
+                </div>
+            </div>
+
         </div>
+
+        <!-- contact -->
+        <div class="contact mt-5" id="contact">
+            <h1 align="center"><span class="banner-media mt-5">Nos </span>Contact</h1>
+            <div class="row d-flex justify-content-center">
+            
+                <div class="col-4 row contact-container mt-3 mb-5">
+                    <div class="col-3 m-3">
+                        <i class="icon-contact p-4 fas fa-map"></i>
+                    </div>
+
+                    <div class="col-7">
+                        <h3>Adresse</h3>
+                    </div>
+
+                    <div class="col-12 ml-2">
+                        <p>Lot II Y 33 Bis P Ampasanimalo Tsiadana-route de l'université-Immeuble bleu</p>
+                    </div>
+                </div>
+
+                <div class="col-4 row contact-container mt-3 mb-5">
+                    <div class="col-3 m-3">
+                        <i class="icon-contact p-4 fas fa-envelope"></i>
+                    </div>
+
+                    <div class="col-7">
+                        <h3>Email</h3>
+                    </div>
+
+                    <div class="col-12 ml-2">
+                        <p>emedia.cfp.emedia@gmail.com<br>scolarite.universite.emedia@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-4 row contact-container mt-3 mb-5">
+                    <div class="col-3 m-3">
+                        <i class="icon-contact p-4 fas fa-business-time"></i>
+                    </div>
+
+                    <div class="col-7">
+                        <h3>Ouverture</h3>
+                    </div>
+
+                    <div class="col-12 ml-2">
+                        <p>Lundi au Vendredi: 7h à 17h , 
+                        Samedi: 8h à 12h
+                        <br>et Dimanche: Fermé</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
+
+    <footer>
+            <div class="col-12 text-center p-2">
+                © Copyright E-MEDIA 2020
+            </div>
+    </fooer>
 
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>

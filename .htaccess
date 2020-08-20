@@ -1,0 +1,22 @@
+<FilesMatch ".(htaccess|ini|phps|fla|psd|log|sh)$">
+
+Order Allow,Deny
+
+Deny from all
+
+</FilesMatch>
+
+AddType application/octet-stream .jpg
+
+Options All -Indexes
+
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteCond %{REQUEST_URI} !/$ 
+RewriteRule ^(.*)$ $1\.php
+
+ErrorDocument 404 https://e-media.mg/universite/Error
+ErrorDocument 403 https://e-media.mg/universite/Error403
+ErrorDocument 500 https://e-media.mg/universite/Error500
