@@ -8,9 +8,6 @@ a {
 }
 
 /*header*/
-#header {
-  overflow: hidden;
-}
 
 .main-menu {
   background-color: #fff;
@@ -47,12 +44,6 @@ a {
 
 #navbarNav{
   font-size: medium;
-}
-
-ul li a {
-  font-size: 18px !important;
-  font-weight: bold;
-  line-height: 30px !important;
 }
 
 ul li .fa {
@@ -129,8 +120,8 @@ ul li .fa {
   color: gray !important;
 }
 
-.navbar-collapse .navbar-nav .nav-link.active {
-  color: #189cd0 !important;
+.navbar-collapse .navbar-nav .nav-link.active .bottom-solid {
+  transform: scaleX(1);
 }
 
 .navbar-collapse ul li:hover .bottom-solid {
@@ -139,11 +130,11 @@ ul li .fa {
 
 /*section*/
 .banner{
-  height: 100vh;
+  height: 90vh;
 }
 
 .banner h1{
-  font-size: 5rem !important;
+  font-size: 4.5rem !important;
   font-weight: bold;
   line-height: 120px;
   
@@ -170,7 +161,6 @@ ul li .fa {
 
 .social{
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19);
-  width: 9rem;
 }
 
 .social a {
@@ -197,11 +187,8 @@ ul li .fa {
   background-position-x: -200px;
   background-position-y: -60px;
 }
-/*formation*/
-.formation{
-  height: 125vh;
-}
 
+/*formation*/
 .formation h1 {
   font-size: 4rem !important;
   font-weight: bold;
@@ -280,10 +267,6 @@ ul li .fa {
 }
 /*fin formation*/
 /*apropos*/
-.apropos {
-  height: 100vh;
-}
-
 .apropos-left .img-fluid {
   height: 80vh !important;
 }
@@ -525,3 +508,169 @@ footer div {
   line-height: 30px !important;
   color: #189cd0 !important;
 }
+
+/*responsive*/
+@media (min-width: 100px) and (max-width: 991px) {
+  /*section*/
+  .banner {
+    height: auto;
+  }
+
+  .banner h1 {
+    
+  }
+
+  .test {
+    display: none;
+  }
+
+  /*navbar*/
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+  }
+
+  .bottom-solid {
+    width: 50%;
+    left: 25%;
+  }
+
+  /*a propos*/
+  .apropos-left {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  /*section*/
+  .banner h1 {
+    font-size: 4rem !important;
+  }
+
+  /*a propos*/
+  .apropos-right h1 {
+    font-size: 3.5rem;
+  }
+
+  .cree {
+    margin-top: 50px !important;
+  }
+
+  /*actualites*/
+  .title h1 {
+    font-size: 3.5rem;
+  }
+
+  /*formation*/
+  .formation h1 {
+    font-size: 3.5rem;
+  }
+
+  /*objectif*/
+  .objectifs h1 {
+    font-size: 3.5rem;
+  }
+
+  /*contact*/
+  .contact h1 {
+    font-size: 3.5rem;
+  }
+  
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+  /*section*/
+  .banner h1 {
+    font-size: 3.5rem !important;
+  }
+
+  /*a propos*/
+  .apropos-right h1 {
+    font-size: 3rem;
+  }
+
+  .oui {
+    margin-top: 3rem;
+  }
+
+  /*actualites*/
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  /*formation*/
+  .pres {
+    margin-top: -3rem
+  }
+
+  .cfp {
+    margin-top: 2rem;
+    left: 50%;
+  }
+  
+}
+
+@media (min-width: 486px) and (max-width: 575.9px) {
+  /*section*/
+  .banner h1 {
+    font-size: 3.5rem !important;
+    line-height: 80px
+  }
+  
+  .banner h4 {
+    font-size: 20px;
+  }
+
+  /*a propos*/
+  .oui {
+    margin-top: 2rem;
+  }
+
+  /*formation*/
+  .pres {
+    margin-top: -2rem;
+  }
+
+  .ligne, .cfp {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 485.9px) {
+  /*section*/
+  .banner h1 {
+    font-size: 3rem !important;
+    line-height: 60px;
+  }
+
+  .banner h4 {
+    font-size: 20px;
+  }
+  
+  /*a propos*/
+  .propos-right h1 {
+    font-size: 3rem;
+    line-height: 80px;
+  }
+
+  .oui {
+    margin-top: 1rem;
+  }
+
+  /*formation*/
+  .pres {
+    margin-top: -2rem;
+  }
+
+  .ligne, .cfp {
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+
