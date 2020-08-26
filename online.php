@@ -21,7 +21,7 @@
             <h4 align="center" class="col-5">Bienvenue - Université (formation présentielle)</h4>
             <div class="collapse navbar-collapse justify-content-end mr-5 col-3" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#accueil"><i class="fas fa-home mr-2"></i>Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Accueil"><i class="fas fa-home mr-2"></i>Accueil</a></li>
                 </ul>
             </div>
         </nav>
