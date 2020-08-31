@@ -39,7 +39,7 @@ function dateToFrench($date, $format)
                         <p class="col-10 col-sm-10 col-md-10 col-lg-12 col-xl-10 banner-text ml-1 animated bounceInDown" style="animation-delay: 3s;">Notre vision c’est de bâtir l’Afrique de demain, donner à tout et en chacun une formation Universitaire de haut niveau mais à moindre cout, et avec plusieurs spécialisations au choix.</p>
                         <div class="col-12 mt-4 d-sm-block d-md-flex d-lg-flex">
                             <button type="button" class="btn mt-2 btn-outline-info animated zoomInRight" style="animation-delay: 3s;">Contact</button>
-                            <button type="button" class="btn mt-2 ml-lg-3 btn-info animated zoomInLeft" style="animation-delay: 3s;">Se connecter</button>
+                            <button type="button" class="btn mt-2 ml-md-2 ml-lg-3 btn-info animated zoomInLeft" style="animation-delay: 3s;">Se connecter</button>
                         </div>
                         <div class="col-5 col-sm-3 col-md-3 col-lg-3 social ml-3 mt-4 mb-sm-5 p-2 text-center animated zoomIn" style="animation-delay: 4s;">
                             <a href=""><i class="fab fa-facebook-square"></i></a>
@@ -87,7 +87,7 @@ function dateToFrench($date, $format)
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-8  apropos-right">
-                <h1 class="ml-5 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span class="banner-media">E-media</span></h1>
+                <h1 class="ml-md-5 ml-lg-5 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span class="banner-media">E-media</span></h1>
                 <div class="row">
                     <div class="cree col-10 col-sm-10 col-md-6 col-lg-6 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-in" data-aos-duration="2000">
                         <span>Crée en 2011, E-MEDIA est actuellement un établissement de référence et un acteur incontournable dans le domaine de la formation à Madagascar et notamment en Afrique francophone.
