@@ -38,8 +38,8 @@ function dateToFrench($date, $format)
                         <h4 class="animated animated bounceInLeft" style="animation-delay: 2s">Visons haut et loin</h4>
                         <p class="col-10 col-sm-10 col-md-10 col-lg-12 col-xl-10 banner-text ml-1 animated bounceInDown" style="animation-delay: 3s;">Notre vision c’est de bâtir l’Afrique de demain, donner à tout et en chacun une formation Universitaire de haut niveau mais à moindre cout, et avec plusieurs spécialisations au choix.</p>
                         <div class="col-12 mt-4 d-sm-block d-md-flex d-lg-flex">
-                            <button type="button" class="btn mt-2 btn-info animated zoomInLeft" style="animation-delay: 3s;">Contact</button>
-                            <button type="button" class="btn mt-2 ml-lg-3 btn-outline-info animated zoomInRight" style="animation-delay: 3s;">Se connecter</button>
+                            <button type="button" class="btn mt-2 btn-outline-info animated zoomInRight" style="animation-delay: 3s;">Contact</button>
+                            <button type="button" class="btn mt-2 ml-lg-3 btn-info animated zoomInLeft" style="animation-delay: 3s;">Se connecter</button>
                         </div>
                         <div class="col-5 col-sm-3 col-md-3 col-lg-3 social ml-3 mt-4 mb-sm-5 p-2 text-center animated zoomIn" style="animation-delay: 4s;">
                             <a href=""><i class="fab fa-facebook-square"></i></a>
@@ -66,14 +66,13 @@ function dateToFrench($date, $format)
                 aria-label="Toggle navigation">
                 <img src="img/accueil/menu.png" alt="">
             </button>
-            <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end mr-1" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item mr-2"><a class="nav-link" href="#accueil">Accueil<span class="bottom-solid"></span></a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="#actualite">Actualité<span class="bottom-solid"></span></a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="#formation">Formation<span class="bottom-solid"></span></a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="#objectif">Objectif<span class="bottom-solid"></span></a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="#contact">Contact<span class="bottom-solid"></span></a></li>
-                    <li class="nav-item ml-2 nav-seconnecter" data-tooltip="Se connecter"><a class="nav-link" href="#lien"><i class="fa fa-user"></i></a></li>
+                    <li class="nav-item nav-seconnecter pr-2" data-tooltip="Se connecter"><a class="nav-link" href="#lien"><i class="mr-2 ml-2 fa fa-user"></i> Se connecter</a></li>
                 </ul>
             </div>
         </nav>
@@ -237,7 +236,7 @@ function dateToFrench($date, $format)
 
         <!--Nos formations-->
         <div class="formation mt-5" id="formation">
-            <h1 class="ml-5"><span class="banner-media">Nos</span> formation</h1>
+            <h1 class="ml-5"><span class="banner-media">Nos</span> formations</h1>
             <div class="">
                 <img class="choisir img-fluid" src="img/accueil/71382219_1113234622208342_1065529829350178816_o.jpg" alt="">
             </div>
@@ -293,14 +292,14 @@ function dateToFrench($date, $format)
         </div>
 
         <!--media-->
-        <div class="row media mt-5">
-            <div class="col-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-left" data-aos-duration="2000">
+        <div class="row media ml-md-3 mt-5">
+            <div class="col-4 aos-init aos-animate code code--small code--left media-titre" data-aos="fade-up-left" data-aos-duration="2000">
                 <h1>Vidéo Formation de l'<span class="banner-media">E-media</span></h1>
             </div>
-            <div class="col-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-right" data-aos-duration="2000">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-right" data-aos-duration="2000">
                 <iframe width="100%" class="iframe-media float-right" src="https://www.youtube.com/embed/NslPwvRvMYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-4 aos-init aos-animate code code--small code--right" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 aos-init aos-animate code code--small code--right" data-aos="fade-up-left" data-aos-duration="2000">
                 <iframe width="90%" class="iframe-media2" src="https://www.youtube.com/embed/uZO3QTWmNfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="90%" class="iframe-media3" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>

@@ -50,11 +50,14 @@ ul li .fa {
   font-size: 20px;
 }
 
-/*tooltip*/
+
 .nav-seconnecter {
   position: relative;
+  border: 1px solid #189cd0;
+  border-radius: 50px;
 }
 
+/*
 .nav-seconnecter::before{
     --scale: 0;
     --arrow-size: 10px;
@@ -100,7 +103,7 @@ ul li .fa {
     content: '';
     border: var(--arrow-size) solid transparent;
     border-top-color: var(--tooltip-color);
-}
+}*/
 
 .bottom-solid {
   justify-content: center;
@@ -190,7 +193,7 @@ ul li .fa {
 
 /*formation*/
 .formation h1 {
-  font-size: 4rem !important;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 120px;
 }
@@ -307,7 +310,7 @@ ul li .fa {
 }
 
 /*actualites*/
-.title h1{
+.actualites h1{
   color: #000000d2;
   font-size: 4rem;
   font-weight: bold;
@@ -422,8 +425,7 @@ ul li .fa {
   color: #189cd0 !important;
 }
 .media{
-  height: 100vh;
-  padding-top: 6.5rem;
+  
 }
 .media h1{
   letter-spacing: 0px;
@@ -542,6 +544,11 @@ footer div {
   .apropos-left {
     display: none;
   }
+
+  /*formations*/
+  .media-titre {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.9px) {
@@ -552,7 +559,8 @@ footer div {
 
   /*a propos*/
   .apropos-right h1 {
-    font-size: 3.5rem;
+    font-size: 3.5rem !important;
+    line-height: 100px;
   }
 
   .cree {
@@ -560,23 +568,27 @@ footer div {
   }
 
   /*actualites*/
-  .title h1 {
+  .actualites h1 {
     font-size: 3.5rem;
+    line-height: 100px;
   }
 
   /*formation*/
   .formation h1 {
     font-size: 3.5rem;
+    line-height: 100px;
   }
 
   /*objectif*/
   .objectifs h1 {
     font-size: 3.5rem;
+    line-height: 100px;
   }
 
   /*contact*/
   .contact h1 {
     font-size: 3.5rem;
+    line-height: 100px;
   }
   
 }
@@ -589,7 +601,8 @@ footer div {
 
   /*a propos*/
   .apropos-right h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 80px;
   }
 
   .oui {
@@ -597,8 +610,9 @@ footer div {
   }
 
   /*actualites*/
-  .title h1 {
-    font-size: 3rem;
+  .actualites h1 {
+    font-size: 3.5rem;
+    line-height: 80px;
   }
 
   /*formation*/
@@ -653,7 +667,7 @@ footer div {
   /*a propos*/
   .propos-right h1 {
     font-size: 3rem;
-    line-height: 80px;
+    line-height: 40px;
   }
 
   .oui {
