@@ -251,7 +251,7 @@ function dateToFrench($date, $format)
                             <div class="mt-5">
                                 <h3 class="card-titre">Université Présentielle</h3>
                                 <div class="mt-3 savoir-plus">
-                                    <a class="" href="#">En savoir plus</a>
+                                    <a class="" href="presentielle">En savoir plus</a>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +265,7 @@ function dateToFrench($date, $format)
                             <div class="mt-5">
                                 <h3 class="card-titre">Université en ligne</h3>
                                 <div class="mt-3 savoir-plus">
-                                    <a href="#">En savoir plus</a>
+                                    <a href="online">En savoir plus</a>
                                 </div>
                             </div>
                             
@@ -280,7 +280,7 @@ function dateToFrench($date, $format)
                             <div class="mt-5">
                                 <h3 class="card-titre">Formation professionnelle</h3>
                                 <div class="mt-3 savoir-plus">
-                                    <a href="#">En savoir plus</a>
+                                    <a href="cfp">En savoir plus</a>
                                 </div>
                             </div>
                             
