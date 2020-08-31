@@ -66,7 +66,7 @@ function dateToFrench($date, $format)
                 aria-label="Toggle navigation">
                 <img src="img/accueil/menu.png" alt="">
             </button>
-            <div class="collapse navbar-collapse justify-content-end mr-1" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end mr-2" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item mr-2"><a class="nav-link" href="#accueil">Accueil<span class="bottom-solid"></span></a></li>
                     <li class="nav-item mr-2"><a class="nav-link" href="#actualite">Actualité<span class="bottom-solid"></span></a></li>
@@ -107,8 +107,8 @@ function dateToFrench($date, $format)
         <div class="row actualites mt-5" id="actualite">
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                 <div class="row card-deck">
-                    <div class="col-12 actualites ml-5 mt-5">
-                        <h1 class="mt-4"><span class="banner-media">Nos</span> actualités</h1>
+                    <div class="col-12 actualites mt-5">
+                        <h1 class="mt-4 ml-5"><span class="banner-media">Nos</span> actualités</h1>
                     </div>
                     <div class="card col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
                         <img class="card-img-top" src="img/accueil/emedia pour site 2.jpg" class="img-fluid" alt="universite">
@@ -293,13 +293,13 @@ function dateToFrench($date, $format)
 
         <!--media-->
         <div class="row media ml-md-3 mt-5">
-            <div class="col-4 aos-init aos-animate code code--small code--left media-titre" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="col-lg-4 aos-init aos-animate code code--small code--left media-titre" data-aos="fade-up-left" data-aos-duration="2000">
                 <h1>Vidéo Formation de l'<span class="banner-media">E-media</span></h1>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-right" data-aos-duration="2000">
+            <div class="col-sm-12 col-md-6 col-lg-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-right" data-aos-duration="2000">
                 <iframe width="100%" class="iframe-media float-right" src="https://www.youtube.com/embed/NslPwvRvMYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 aos-init aos-animate code code--small code--right" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="col-sm-12 col-md-6 col-lg-4 media-right aos-init aos-animate code code--small code--right" data-aos="fade-up-left" data-aos-duration="2000">
                 <iframe width="90%" class="iframe-media2" src="https://www.youtube.com/embed/uZO3QTWmNfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="90%" class="iframe-media3" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -310,11 +310,11 @@ function dateToFrench($date, $format)
             <h1 align="center"><span class="banner-media">Nos</span> objectifs</h1>
 
             <div class="row mt-3">
-                <div class="col-6 mt-5 img-objectif">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
                     <img src="img/objectif/1.jpg" class="img-fluid col-10" alt="">
                 </div>
 
-                <div class="col-6 mt-5 objectif-text">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
                     <div class="col-12">
                         <h2 class="mt-4">Ouverture de l’établissement sur le plan international</h2>
                         <p class="text-justify mt-3">Le but de l’ouverture à l’international est d’aligner les formations dispensées au sein de l’établissement avec ceux des grands établissements reconnus mondialement</p>
@@ -322,23 +322,23 @@ function dateToFrench($date, $format)
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-6 mt-5 objectif-text">
+            <div class="row mt-sm-0 mt-md-3 mt-lg-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
                     <div class="col-12">
                         <h2 class="mt-4">La construction d’un nouveau bâtiment</h2>
                         <p class="text-justify mt-3">La construction d’un bâtiment a pour finalité d’offrir environnement propice à l’épanouissement des étudiants. Doté de toutes les commodités nécessaires pour un apprentissage enrichissant et digne.</p>
                     </div>
                 </div>
-                <div class="col-6 mt-5 img-objectif">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
                     <img src="img/objectif/2.jpg" class="img-fluid float-right col-11" alt="">
                 </div>
             </div>
             
-            <div class="row mt-5">
-                <div class="col-6 mt-5 img-objectif">
+            <div class="row mt-sm-0 mt-md-3 mt-lg-5">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
                     <img src="img/objectif/3.jpg" class="img-fluid col-11" alt="">
                 </div>
-                <div class="col-6 mt-5 objectif-text">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
                     <div class="col-12">
                         <h2 class="mt-4">Mise à la disposition des étudiants des équipements à la pointe de la technologie</h2>
                         <p class="text-justify mt-3">L’établissement met un point d’honneur à se doter des matériels et équipements nécessaires pour parfaire la formation qu’elle dispense.</p>
@@ -346,14 +346,14 @@ function dateToFrench($date, $format)
                 </div>
             </div>
 
-            <div class="row mt-5">
-                <div class="col-6 mt-5 objectif-text">
+            <div class="row mt-sm-0 mt-md-3 mt-lg-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
                     <div class="col-12">
                         <h2 class="mt-4">L’acquisition de la norme ISO 9001-2015</h2>
                         <p class="text-justify mt-3">La norme ISO 9001-2015, en rapport avec le management qualité a pour but d’assurer la satisfaction des clients , notamment les étudiants, et ainsi de devenir la première institution sur la Grande Ile à jouir de la norme ISO.</p>
                     </div>
                 </div>
-                <div class="col-6 mt-5 img-objectif">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
                     <img src="img/objectif/iso.jpg" class="img-fluid float-right col-11" alt="">
                 </div>
             </div>
@@ -365,7 +365,7 @@ function dateToFrench($date, $format)
             <h1 align="center"><span class="banner-media mt-5">Nos </span>Contact</h1>
             <div class="row d-flex justify-content-center">
             
-                <div class="col-4 row contact-container mt-3 mb-5">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 row contact-container mt-3 mb-5">
                     <div class="col-3 m-3">
                         <i class="icon-contact p-4 fas fa-map"></i>
                     </div>
@@ -379,7 +379,7 @@ function dateToFrench($date, $format)
                     </div>
                 </div>
 
-                <div class="col-4 row contact-container mt-3 mb-5">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 row contact-container mt-3 mb-5">
                     <div class="col-3 m-3">
                         <i class="icon-contact p-4 fas fa-envelope"></i>
                     </div>
@@ -393,7 +393,7 @@ function dateToFrench($date, $format)
                     </div>
                 </div>
 
-                <div class="col-4 row contact-container mt-3 mb-5">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 row contact-container mt-3 mb-5">
                     <div class="col-3 m-3">
                         <i class="icon-contact p-4 fas fa-business-time"></i>
                     </div>
