@@ -631,7 +631,7 @@ footer div {
   /*section*/
   .banner h1 {
     font-size: 3.5rem !important;
-    line-height: 80px
+    line-height: 100px
   }
   
   .banner h4 {
@@ -639,8 +639,19 @@ footer div {
   }
 
   /*a propos*/
+  .apropos-right h1 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+
   .oui {
     margin-top: 2rem;
+  }
+
+  /*actualites*/
+  .actualites h1 {
+    font-size: 3rem;
+    line-height: 60px;
   }
 
   /*formation*/
@@ -655,23 +666,36 @@ footer div {
 
 @media (min-width: 200px) and (max-width: 485.9px) {
   /*section*/
+  section {
+    margin-bottom: 40px;
+  }
+
   .banner h1 {
-    font-size: 3rem !important;
-    line-height: 60px;
+    font-size: 3.5rem !important;
+    line-height: 100px;
   }
 
   .banner h4 {
     font-size: 20px;
   }
+
+  /*navbar*/
+  
   
   /*a propos*/
-  .propos-right h1 {
+  .apropos-right h1 {
     font-size: 3rem;
-    line-height: 40px;
+    line-height: 60px;
   }
 
   .oui {
     margin-top: 1rem;
+  }
+
+  /*actualites*/
+  .actualites h1 {
+    font-size: 3rem;
+    line-height: 60px;
   }
 
   /*formation*/

@@ -21,7 +21,7 @@
             <h4 align="center" class="col-5">Bienvenue - Université (formation présentielle)</h4>
             <div class="collapse navbar-collapse justify-content-end mr-5 col-3" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#accueil"><i class="fas fa-home mr-2"></i>Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Accueil"><i class="fas fa-home mr-2"></i>Accueil</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,11 +63,11 @@
     <div class="contact-cfp mb-4">
         <div class="d-flex">
             <i class="fas ico fa-envelope"></i>
-            <small class="ml-3">scolarite.universite.emedia@gmail.com</small> 
+            <small class="ml-3">emediaenligne2020@gmail.com</small> 
         </div>
         <div class="d-flex">
             <i class="fas ico fa-phone"></i>
-            <small class="ml-3"> 034 14 518 75</small> 
+            <small class="ml-3"> 034 11 777 37</small> 
         </div>
     </div>
     <div class="tab-content mb-5 tab-cfp" id="v-pills-tabContent">

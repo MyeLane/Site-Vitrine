@@ -16,7 +16,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteCond %{REQUEST_URI} !/$ 
 RewriteRule ^(.*)$ $1\.php
-
+RewriteRule ^Accueil$ index [L] 
+RewriteRule ^cfp$ cfp [L] 
+RewriteRule ^online$ online [L] 
+RewriteRule ^presentielle$ presencielle.php [L] 
 ErrorDocument 404 https://e-media.mg/universite/Error
 ErrorDocument 403 https://e-media.mg/universite/Error403
 ErrorDocument 500 https://e-media.mg/universite/Error500

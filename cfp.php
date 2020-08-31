@@ -19,7 +19,7 @@
             <h4 align="center" class="col-5">Bienvenue - Centre de Formation Professionnelle</h4>
             <div class="collapse navbar-collapse justify-content-end mr-5 col-3" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#accueil"><i class="fas fa-home mr-2"></i>Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Accueil"><i class="fas fa-home mr-2"></i>Accueil</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,7 +28,7 @@
 
 
 <div class="row mt-5 col-12">
-  <div class="col-3">
+  <div class="col-3 nav-formation">
     <img src="img/accueil/96735692_559166918357964_1257399878321963008_n.jpg" class="img-fluid" alt="">
     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <a class="nav-link active" id="v-pills-image-tab" data-toggle="pill" href="#v-pills-image" role="tab" aria-controls="v-pills-home" aria-selected="true">IMAGE</a>

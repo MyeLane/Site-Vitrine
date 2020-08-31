@@ -11,7 +11,9 @@
 .title{
   border-bottom: 1px solid rgb(131, 129, 129) !important;
 }
-  
+.nav-formation{
+  position: fixed;
+} 
 .nav-pills .nav-link{
     background-color: #ffffff !important;
     border-radius: 0rem !important;
