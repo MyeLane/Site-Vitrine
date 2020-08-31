@@ -28,7 +28,7 @@
 
 
 <div class="row mt-5 col-12">
-  <div class="col-3">
+  <div class="col-3 nav-formation">
     <img src="img/accueil/96735692_559166918357964_1257399878321963008_n.jpg" class="img-fluid" alt="">
     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <a class="nav-link active" id="v-pills-image-tab" data-toggle="pill" href="#v-pills-image" role="tab" aria-controls="v-pills-home" aria-selected="true">IMAGE</a>

@@ -63,11 +63,11 @@
     <div class="contact-cfp mb-4">
         <div class="d-flex">
             <i class="fas ico fa-envelope"></i>
-            <small class="ml-3">scolarite.universite.emedia@gmail.com</small> 
+            <small class="ml-3">emediaenligne2020@gmail.com</small> 
         </div>
         <div class="d-flex">
             <i class="fas ico fa-phone"></i>
-            <small class="ml-3"> 034 14 518 75</small> 
+            <small class="ml-3"> 034 11 777 37</small> 
         </div>
     </div>
     <div class="tab-content mb-5 tab-cfp" id="v-pills-tabContent">
