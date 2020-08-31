@@ -2,11 +2,49 @@
     box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.19) !important;
   }
 .nav-pills .nav-link.active{
-    background-color: #189cd0 !important;
+    color: #189cd0 !important;
+    background-color: #189cd04d !important;
   }
+.color{
+    color: #189cd0 !important;
+}
+.title{
+  border-bottom: 1px solid rgb(131, 129, 129) !important;
+}
   
 .nav-pills .nav-link{
     background-color: #ffffff !important;
     border-radius: 0rem !important;
+    color: rgb(22, 22, 22) !important;
     padding: 1rem;
+    text-align: center;
+  }
+  #LogoMenu{
+    width: 8rem;
+  }
+  li {
+    list-style: none;
+  }
+  .main-menu a{
+    text-decoration: none;
+    position: relative;
+    color: #189cd0;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+  }
+  .main-menu{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19) !important;
+  }
+  .contact-cfp{
+  
+  }
+  .solid {
+    width: 100%;
+    background-color: #189cd0;
+    height: 0.2rem;
+  }
+  .ico{
+      color: #189cd0;
   }
