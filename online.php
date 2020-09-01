@@ -15,11 +15,11 @@
 
 <div id="header" class="main-menu col-12">
         <nav class="navbar navbar-expand-lg row">
-            <div class="ml-5 col-3">
+            <div class="ml-5 col-3 col-sm-3 col-md-3 col-lg-3"> 
                     <img id="LogoMenu" width="50%" src="img/accueil/logo E-media.png" alt="logo">
             </div>
-            <h4 align="center" class="col-5">Bienvenue - Université (formation présentielle)</h4>
-            <div class="collapse navbar-collapse justify-content-end mr-5 col-3" id="navbarNav">
+            <h4 align="center" class="col-5 col-sm-0 col-md-0 col-lg-5">Bienvenue - Université (formation présentielle)</h4>
+            <div class="collapse navbar-collapse justify-content-end mr-5 col-3 col-sm-3 col-md-3 col-lg-3" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="Accueil"><i class="fas fa-home mr-2"></i>Accueil</a></li>
                 </ul>
@@ -29,8 +29,8 @@
 
 
 
-<div class="row mt-5 col-12">
-  <div class="col-3">
+<div class="row mt-5 col-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="col-12 col-sm-12 col-md-3 col-lg-3">
     <img src="img/accueil/emedia pour site 2.jpg" class="img-fluid" alt="">
     <h3 align="center" class="m-3 color">LICENCE BACC +3</h3>
     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -59,7 +59,7 @@
       <span class="solid"></span>
     </div>
   </div>
-  <div class="col-9">
+  <div class="col-12 col-sm-12 col-md-9 col-lg-9">
     <div class="contact-cfp mb-4">
         <div class="d-flex">
             <i class="fas ico fa-envelope"></i>
@@ -72,7 +72,7 @@
     </div>
     <div class="tab-content mb-5 tab-cfp" id="v-pills-tabContent">
         <div class="tab-pane p-5 fade show active" id="v-pills-image" role="tabpanel" aria-labelledby="v-pills-image-tab">
-            <h2 align="center" class="color title mb-4 pb-4">INFORMATIQUE ET TELECOMMUNICATION (TIC) - LICENCE</h2>
+            <h3 align="center" class="color col-12 col-sm-12 col-md-12 col-lg-12 title mb-4 pb-4">INFORMATIQUE ET TELECOMMUNICATION (TIC) - LICENCE</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La mention Informatique et télécommunication a pour objectif de former des spécialistes dans le domaine du génie informatique et des télécommunications. Les diplômés sont capables de mettre à profit leurs connaissances dans les applications des interconnexions de réseaux, des systèmes de télécommunications et de la sécurisation des échanges. Ils possèdent les compétences pour concevoir, intégrer, exploiter et administrer les systèmes informatiques nécessaires au fonctionnement d'une entreprise mais aussi de mieux adapter les fonctionnalités des réseaux locaux émergeants.</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -92,7 +92,7 @@
         </div>
         <div class="tab-pane fade p-5" id="v-pills-son" role="tabpanel" aria-labelledby="v-pills-son-tab">
 
-            <h2 align="center" class="color title pb-4 mb-4">COMMUNICATION AUDIOVISUELLE ET NUMERIQUE (CAN) - LICENCE</h2>
+            <h3 align="center" class="color title col-12 col-sm-12 col-md-12 col-lg-12 pb-4 mb-4">COMMUNICATION AUDIOVISUELLE ET NUMERIQUE (CAN) - LICENCE</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La mention Communication audiovisuelle et infographie, accessible à tous les bacheliers, permet à ses étudiants d'acquérir de solides connaissances théoriques dans le domaine de l'audiovisuel. Elle forme les futurs professionnels des métiers artistiques et techniques de l'audiovisuel. Destiné aux passionnés de l’audiovisuel, elle permet aux étudiants d’avoir les capacités nécessaires pour initier et accompagner la création d'œuvres audiovisuelles, tout en maitrisant parfaitement les concepts de la communication.</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -113,7 +113,7 @@
         </div>
         <div class="tab-pane fade p-5" id="v-pills-web" role="tabpanel" aria-labelledby="v-pills-web-tab">
 
-            <h2 align="center" class="color title pb-4 mb-4">MARKETING, PUBLICITE ET JOURNALISME (MPJ) - LICENCE</h2>
+            <h3 align="center" class="color title col-12 col-sm-12 col-md-12 col-lg-12 pb-4 mb-4">MARKETING, PUBLICITE ET JOURNALISME (MPJ) - LICENCE</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La formation s’adresse aux passionnées de la communication. Elle permet de devenir un professionnel qui maîtrise les méthodes et les outils de communication, de marketing et surtout les réalisations publicitaires, susceptible de réaliser en amont des études sur les différents marchés, mais aussi élaborer les supports et moyens publicitaires pertinents, Elle est combinée avec un cursus de journalisme qui permet à l’étudiant de maîtriser tous les aspects de ce domaine.</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -133,7 +133,7 @@
         </div>
         <div class="tab-pane fade p-5" id="v-pills-management" role="tabpanel" aria-labelledby="v-pills-management-tab">
 
-            <h2 align="center" class="color title pb-4 mb-4">MANAGEMENT - LICENCE</h2>
+            <h3 align="center" class="color col-12 col-sm-12 col-md-12 col-lg-12 title pb-4 mb-4">MANAGEMENT - LICENCE</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La mention management a pour vocation de former des managers et des entrepreneurs exerçant dans le domaine de l’économie et de la gestion d’entreprise ou d’organisation. Elle vise à donner aux étudiants les capacités nécessaires pour maitriser tous les aspects essentiels d’une entreprise tels que la finance d’entreprise, la gestion des ressources humaine, la production… Ainsi, la formation est interdisciplinaire (économie, gestion, finance, anglais, mathématiques, statistiques, informatique, etc.). La mention a pour principale finalité de doter les étudiants d’une grande capacité d’analyse et de synthèse, polyvalents et aptes à s’adapter aux évolutions du monde économique.</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -154,7 +154,7 @@
         </div>
         <div class="tab-pane fade p-5" id="v-pills-droit" role="tabpanel" aria-labelledby="v-pills-droit-tab">
 
-            <h2 align="center" class="color title pb-4 mb-4">DROIT - LICENCE</h2>
+            <h3 align="center" class="color col-12 col-sm-12 col-md-12 col-lg-12 title pb-4 mb-4">DROIT - LICENCE</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La formation en droit a pour vocation de former les étudiants dans le but de connaître et de maitriser les raisonnements, les notions et les savoirs fondamentaux dans le domaine juridique. Il permet aux étudiants d’acquérir les savoirs théoriques en droit, ainsi que de maitriser tous les aspects des techniques juridiques (dissertation, commentaire de texte, commentaire d’arrêt, analyse de documents juridiques etc.).</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -183,7 +183,7 @@ Droit du travail, Droit constitutionnel, Droit de la famille, Comptabilité gén
 
 
         <div class="tab-pane p-5 fade" id="v-pills-image1" role="tabpanel" aria-labelledby="v-pills-image-tab1">
-            <h2 align="center" class="color title mb-4 pb-4">INFORMATIQUE ET SYSTÈME EMBARQUÉS</h2>
+            <h3 align="center" class="color title col-12 col-sm-12 col-md-12 col-lg-12 mb-4 pb-4">INFORMATIQUE ET SYSTÈME EMBARQUÉS</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La mention Informatique et télécommunication a pour objectif de former des spécialistes dans le domaine du génie informatique et des télécommunications. Les diplômés sont capables de mettre à profit leurs connaissances dans les applications des interconnexions de réseaux, des systèmes de télécommunications et de la sécurisation des échanges. Ils possèdent les compétences pour concevoir, intégrer, exploiter et administrer les systèmes informatiques nécessaires au fonctionnement d'une entreprise mais aussi de mieux adapter les fonctionnalités des réseaux locaux émergeants.</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -205,7 +205,7 @@ ELECTRONIQUE EMBARQUEE :-Licence en Informatique, Génie Logiciel, Réseaux syst
         </div>
         <div class="tab-pane fade p-5" id="v-pills-son1" role="tabpanel" aria-labelledby="v-pills-son-tab1">
 
-            <h2 align="center" class="color title pb-4 mb-4">AUDIOVISUEL ET CINÉMATOGRAPHIE</h2>
+            <h3 align="center" class="color title col-12 col-sm-12 col-md-12 col-lg-12 pb-4 mb-4">AUDIOVISUEL ET CINÉMATOGRAPHIE</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La mention Communication audiovisuelle et infographie, accessible à tous les bacheliers, permet à ses étudiants d'acquérir de solides connaissances théoriques dans le domaine de l'audiovisuel. Elle forme les futurs professionnels des métiers artistiques et techniques de l'audiovisuel. Destiné aux passionnés de l’audiovisuel, elle permet aux étudiants d’avoir les capacités nécessaires pour initier et accompagner la création d'œuvres audiovisuelles, tout en maitrisant parfaitement les concepts de la communication.</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -226,7 +226,7 @@ ELECTRONIQUE EMBARQUEE :-Licence en Informatique, Génie Logiciel, Réseaux syst
         </div>
         <div class="tab-pane fade p-5" id="v-pills-web1" role="tabpanel" aria-labelledby="v-pills-web-tab1">
 
-            <h2 align="center" class="color title pb-4 mb-4">MARKETING, PUBLICITE ET JOURNALISME (MPJ) - MASTER</h2>
+            <h3 align="center" class="color title col-12 col-sm-12 col-md-12 col-lg-12 pb-4 mb-4">MARKETING, PUBLICITE ET JOURNALISME (MPJ) - MASTER</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La formation s’adresse aux passionnées de la communication. Elle permet de devenir un professionnel qui maîtrise les méthodes et les outils de communication, de marketing et surtout les réalisations publicitaires, susceptible de réaliser en amont des études sur les différents marchés, mais aussi élaborer les supports et moyens publicitaires pertinents, Elle est combinée avec un cursus de journalisme qui permet à l’étudiant de maîtriser tous les aspects de ce domaine.</p>
             <h4 class="mb-2">Contenu de la formation</h4>
@@ -246,7 +246,7 @@ ELECTRONIQUE EMBARQUEE :-Licence en Informatique, Génie Logiciel, Réseaux syst
         </div>
         <div class="tab-pane fade p-5" id="v-pills-management1" role="tabpanel" aria-labelledby="v-pills-management-tab1">
 
-            <h2 align="center" class="color title pb-4 mb-4">MBA SPECIALISE MASTER OF BUSINESS ADMINISTRATION</h2>
+            <h3 align="center" class="color title col-12 col-sm-12 col-md-12 col-lg-12 pb-4 mb-4">MBA SPECIALISE MASTER OF BUSINESS ADMINISTRATION</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">Destinés aux professionnels et aux cadres d’entreprise, la formation en Management Business Administration, a pour finalité d’octroyer aux participants de solides connaissances et aptitudes managériales. En outre, elle permet de percevoir la dimension humaine de la gestion d'entreprise, de comprendre les enjeux, d'acquérir les compétences variées en management et gestion, et de sensibiliser les participants aux facteurs clés de réussite d'une entreprise. Les participants ont également la possibilité de choisir une spécialité qui sera particulièrement approfondie tout au long de son cursus et qui lui permettra à la fin du programme d’en avoir une expertise.</p>
 
@@ -264,7 +264,7 @@ ELECTRONIQUE EMBARQUEE :-Licence en Informatique, Génie Logiciel, Réseaux syst
         </div>
         <div class="tab-pane fade p-5" id="v-pills-droit1" role="tabpanel" aria-labelledby="v-pills-droit-tab1">
 
-            <h2 align="center" class="color title pb-4 mb-4">DROIT - MASTER</h2>
+            <h3 align="center" class="color title col-12 col-sm-12 col-md-12 col-lg-12 pb-4 mb-4">DROIT - MASTER</h3>
             <h4 class="mb-2">Objectifs</h4>
             <p class="text-justify">La formation en droit a pour vocation de former les étudiants dans le but de connaître et de maitriser les raisonnements, les notions et les savoirs fondamentaux dans le domaine juridique. Il permet aux étudiants d’acquérir les savoirs théoriques en droit, ainsi que de maitriser tous les aspects des techniques juridiques (dissertation, commentaire de texte, commentaire d’arrêt, analyse de documents juridiques etc.).</p>
             <h4 class="mb-2">Contenu de la formation</h4>
