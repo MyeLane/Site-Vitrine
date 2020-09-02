@@ -22,7 +22,7 @@ function dateToFrench($date, $format)
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.8.2-web/css/all.min.css">
-    <!--<link rel="stylesheet" href="css/aos.css">-->
+    <link rel="stylesheet" href="css/aos.css">
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
 </head>
 
@@ -87,16 +87,16 @@ function dateToFrench($date, $format)
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-lg-8  apropos-right">
-                <h1 class="ml-md-5 ml-lg-5 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-out" data-aos-duration="2000">A propos de l'<span class="banner-media">E-media</span></h1>
+                <h1 class="ml-md-5 ml-lg-5 mt-5 aos-init aos-animate code code--small code--down" data-aos="zoom-in" data-aos-duration="2000">A propos de l'<span class="banner-media">E-media</span></h1>
                 <div class="row">
-                    <div class="cree col-10 col-sm-10 col-md-6 col-lg-6 mt-5 aos-init aos-animate code code--small code--left" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="cree col-10 col-sm-10 col-md-6 col-lg-6 mt-5 aos-init aos-animate code code--small code--down" data-aos="zoom-in" data-aos-duration="2000">
                         <span>Crée en 2011, E-MEDIA est actuellement un établissement de référence et un acteur incontournable dans le domaine de la formation à Madagascar et notamment en Afrique francophone.
                          Il s’oriente dans plusieurs domaines et spécialisations</span>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-5 aos-init aos-animate code code--small code--left" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-5 aos-init aos-animate code code--small code--down" data-aos="fade-down" data-aos-duration="2000">
                         <img src="img/accueil/apropos1.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 ml-md-5 ml-lg-5 aos-init aos-animate code code--small code--right" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 ml-md-5 ml-lg-5 aos-init aos-animate code code--small code--up" data-aos="fade-up" data-aos-duration="2000">
                         <img src="img/accueil/apropos1.jpg" alt="" class="img-fluid oui ml-md-5 ml-lg-5">
                     </div>
                 </div>
@@ -105,7 +105,7 @@ function dateToFrench($date, $format)
 
         <!--actulites-->
         <div class="row actualites mt-5" id="actualite">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 aos-init aos-animate code code--small code--down" data-aos="zoom-out" data-aos-duration="2000">
                 <div class="row card-deck">
                     <div class="col-12 actualites mt-5">
                         <h1 class="mt-4 ml-5"><span class="banner-media">Nos</span> actualités</h1>
@@ -128,7 +128,7 @@ function dateToFrench($date, $format)
             </div>
 
             <!--google news-->
-            <div class="col-12 col-sm-12 col-md-12 col-lg-4 google-news mt-5">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 google-news mt-5 aos-init aos-animate code code--small code--down" data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="row mt-5">
                     <ul class="nav nav-pills col-12 nav-justified mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -236,14 +236,14 @@ function dateToFrench($date, $format)
 
         <!--Nos formations-->
         <div class="formation mt-5" id="formation">
-            <h1 class="ml-5"><span class="banner-media">Nos</span> formations</h1>
-            <div class="">
+            <h1 class="ml-5 aos-init aos-animate code code--small code--down" data-aos="zoom-in" data-aos-duration="2000"><span class="banner-media">Nos</span> formations</h1>
+            <div class="aos-init aos-animate code code--small code--down" data-aos="zoom-out" data-aos-duration="2000">
                 <img class="choisir img-fluid" src="img/accueil/71382219_1113234622208342_1065529829350178816_o.jpg" alt="">
             </div>
             <div class="container-fluid">
                 <div class="row">
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4" align="center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 aos-init aos-animate code code--small code--down" data-aos="fade-up" data-aos-duration="2000" align="center">
                         <div class=" pres col-10 col-sm-10 col-md-10 col-lg-10">
                             <div class="icon-formation">
                                 <i class="mt-5 fas fa-user-graduate"></i>
@@ -257,7 +257,7 @@ function dateToFrench($date, $format)
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4" align="center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 aos-init aos-animate code code--small code--up" data-aos="fade-down" data-aos-duration="2000" align="center">
                         <div class="ligne col-10 col-sm-10 col-md-10 col-lg-10">
                             <div class="icon-formation">
                                 <i class="mt-5 fab fa-audible"></i>
@@ -272,7 +272,7 @@ function dateToFrench($date, $format)
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4" align="center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4 aos-init aos-animate code code--small code--down" data-aos="fade-up" data-aos-duration="2000" align="center">
                         <div class="cfp col-10 col-sm-10 col-md-10 col-lg-10">
                             <div class="icon-formation">
                                 <i class="mt-5 fas fa-graduation-cap"></i>
@@ -293,28 +293,28 @@ function dateToFrench($date, $format)
 
         <!--media-->
         <div class="row media ml-md-3 mt-5">
-            <div class="col-lg-4 aos-init aos-animate code code--small code--left media-titre" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="col-lg-4 media-titre aos-init aos-animate code code--small code--down" data-aos="fade-in" data-aos-duration="2000">
                 <h1>Vidéo Formation de l'<span class="banner-media">E-media</span></h1>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 aos-init aos-animate code code--small code--left" data-aos="fade-up-right" data-aos-duration="2000">
+            <div class="col-sm-12 col-md-6 col-lg-4 aos-init aos-animate code code--small code--down" data-aos="fade-up" data-aos-duration="2000">
                 <iframe width="100%" class="iframe-media float-right" src="https://www.youtube.com/embed/NslPwvRvMYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 media-right aos-init aos-animate code code--small code--right" data-aos="fade-up-left" data-aos-duration="2000">
-                <iframe width="90%" class="iframe-media2" src="https://www.youtube.com/embed/uZO3QTWmNfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="90%" class="iframe-media3" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-sm-12 col-md-6 col-lg-4 media-right">
+                <iframe width="90%" class="iframe-media2 aos-init aos-animate code code--small code--down" data-aos="flip-up" data-aos-duration="2000" src="https://www.youtube.com/embed/uZO3QTWmNfQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="90%" class="iframe-media3 aos-init aos-animate code code--small code--down" data-aos="flip-down" data-aos-duration="2000" src="https://www.youtube.com/embed/jcY50CWcbTE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
         <!--Nos objectifs-->
         <div class="objectifs container-fluid mt-5" id="objectif">
-            <h1 align="center"><span class="banner-media">Nos</span> objectifs</h1>
+            <h1 align="center" class="aos-init aos-animate code code--small code--down" data-aos="fade-in" data-aos-duration="2000"><span class="banner-media">Nos</span> objectifs</h1>
 
             <div class="row mt-3">
-                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif aos-init aos-animate code code--small code--up" data-aos="fade-down" data-aos-duration="2000">
                     <img src="img/objectif/1.jpg" class="img-fluid col-10" alt="">
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text img-objectif aos-init aos-animate code code--small code--down" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-12">
                         <h2 class="mt-4">Ouverture de l’établissement sur le plan international</h2>
                         <p class="text-justify mt-3">Le but de l’ouverture à l’international est d’aligner les formations dispensées au sein de l’établissement avec ceux des grands établissements reconnus mondialement</p>
@@ -323,22 +323,22 @@ function dateToFrench($date, $format)
             </div>
 
             <div class="row mt-sm-0 mt-md-3 mt-lg-5">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text img-objectif aos-init aos-animate code code--small code--down" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-12">
                         <h2 class="mt-4">La construction d’un nouveau bâtiment</h2>
                         <p class="text-justify mt-3">La construction d’un bâtiment a pour finalité d’offrir environnement propice à l’épanouissement des étudiants. Doté de toutes les commodités nécessaires pour un apprentissage enrichissant et digne.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif img-objectif aos-init aos-animate code code--small code--up" data-aos="fade-down" data-aos-duration="2000">
                     <img src="img/objectif/2.jpg" class="img-fluid float-right col-11" alt="">
                 </div>
             </div>
             
             <div class="row mt-sm-0 mt-md-3 mt-lg-5">
-                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif img-objectif aos-init aos-animate code code--small code--down" data-aos="fade-up" data-aos-duration="2000">
                     <img src="img/objectif/3.jpg" class="img-fluid col-11" alt="">
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text img-objectif aos-init aos-animate code code--small code--up" data-aos="fade-down" data-aos-duration="2000">
                     <div class="col-12">
                         <h2 class="mt-4">Mise à la disposition des étudiants des équipements à la pointe de la technologie</h2>
                         <p class="text-justify mt-3">L’établissement met un point d’honneur à se doter des matériels et équipements nécessaires pour parfaire la formation qu’elle dispense.</p>
@@ -347,13 +347,13 @@ function dateToFrench($date, $format)
             </div>
 
             <div class="row mt-sm-0 mt-md-3 mt-lg-5">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 objectif-text img-objectif aos-init aos-animate code code--small code--down" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-12">
                         <h2 class="mt-4">L’acquisition de la norme ISO 9001-2015</h2>
                         <p class="text-justify mt-3">La norme ISO 9001-2015, en rapport avec le management qualité a pour but d’assurer la satisfaction des clients , notamment les étudiants, et ainsi de devenir la première institution sur la Grande Ile à jouir de la norme ISO.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 mt-5 img-objectif">
+                <div class="col-md-6 col-lg-6 mt-5 img-objectif img-objectif aos-init aos-animate code code--small code--up" data-aos="fade-down" data-aos-duration="2000">
                     <img src="img/objectif/iso.jpg" class="img-fluid float-right col-11" alt="">
                 </div>
             </div>
@@ -362,8 +362,8 @@ function dateToFrench($date, $format)
 
         <!-- contact -->
         <div class="contact mt-5" id="contact">
-            <h1 align="center"><span class="banner-media mt-5">Nos </span>Contact</h1>
-            <div class="row d-flex justify-content-center">
+            <h1 align="center" class="img-objectif aos-init aos-animate code code--small code--up" data-aos="fade-in" data-aos-duration="2000"><span class="banner-media mt-5">Nos </span>Contact</h1>
+            <div class="row d-flex justify-content-center img-objectif aos-init aos-animate code code--small code--up" data-aos="fade-down" data-aos-duration="2000">
             
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 row contact-container mt-3 mb-5">
                     <div class="col-3 m-3">
