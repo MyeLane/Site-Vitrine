@@ -38,6 +38,7 @@
   }
   .main-menu{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.19) !important;
+    background-color: #ffffff !important;
   }
   .contact-cfp{
   
@@ -50,3 +51,12 @@
   .ico{
       color: #189cd0;
   }
+
+/*section*/
+.section-right {
+  position: relative !important;
+}
+
+.section-left {
+  position: relative !important;
+}
