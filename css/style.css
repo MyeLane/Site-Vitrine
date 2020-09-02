@@ -53,8 +53,15 @@ ul li .fa {
 
 .nav-seconnecter {
   position: relative;
-  border: 1px solid #189cd0;
-  border-radius: 50px;
+}
+
+.nav-seconnecter a {
+  color: #189cd0;
+  transition: .5s;
+}
+
+.nav-seconnecter .nav-link:hover {
+  color: #189cd0 !important;
 }
 
 /*
