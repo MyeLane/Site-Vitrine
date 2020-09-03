@@ -97,7 +97,7 @@ function dateToFrench($date, $format)
                         <img src="img/accueil/apropos1.jpg" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 ml-md-5 ml-lg-5 aos-init aos-animate code code--small code--up" data-aos="fade-up" data-aos-duration="2000">
-                        <img src="img/accueil/apropos1.jpg" alt="" class="img-fluid oui ml-md-5 ml-lg-5">
+                        <img src="img/meedia.jpg" alt="" class="img-fluid oui ml-md-5 ml-lg-5">
                     </div>
                 </div>
             </div>
