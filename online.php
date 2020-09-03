@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-media en ligne</title> 
-    <link rel="icon" type="icon" href="img/logo E-media copie.png">
+    <link rel="icon" type="icon" href="img/accueil/logo.png">
     <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/online.css">
@@ -15,7 +15,7 @@
 <body>
     <section id="topbar" class="d-none d-lg-block">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="container d-flex">
+            <div class="container-fluid d-flex">
                 <div class="contact-info mr-auto">
                     <i class="fas fa-phone"></i> - CFP 0330225086 - UNIVERSITE 0341451875
                 </div>
@@ -55,23 +55,34 @@
       </div>
 
 
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-5">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
+            <div class="container-fluid">
 
-                <img src="img/accueil/logo E-media.png" class="logo_emedia" alt="">
-                <h3 class="pt-2">Bienvenue - <span class="banner">Université en ligne</span></h3>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="col-2">
+                    <img src="img/accueil/logo E-media.png" class="logo_emedia" alt="">
+                </div>
+
+                <div class="col-6">
+                    <h3>Bienvenue - <span>Université en ligne</span></h3>
+                </div>
+
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse text-center col-4 ml-lg-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
 
                         </li>
+
+                        <li class="nav-item mr-3 mt-1 text-md-center">
+                            <a class="p-2" href="../universite"> <button class="btn text-uppercase  btn-lg pt-1 pb-1 pr-3 pl-3">S'inscrire</button></a>
+                        </li>
+
                         <li class="nav-item">
-                            <a class="nav-link ligne" href="../index.php"><i class="fas fa-home mr-2"></i>Accueil</a>
+                            <a class="nav-link ligne" href="../index.php"><i class="fas fa-home"></i>Accueil<span class="bottom-solid"></span></a>
 
                         </li>
                     </ul>
@@ -79,36 +90,22 @@
             </div>
         </nav>
     </div>
+
     <!--Mifarana eto ny Nav Bar-->
     <!--Manomboka eto ny header -->
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 " id="acceuil">
-        <div class="container">
-            <div class="overlay">
-                <div class="row mt-4">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 mt-5">
-                        <img src="../image/emedia pour site 2.jpg" width="100%" height="520" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-5 description_emedia_acceuil">
-                        <p class="para_header"> <span class="legende"> Bienvenue<br/> Université E-media En Ligne</span><br/> <br/>E-MEDIA enrichit son offre de formation en mettant à disposition du public des formations diplomantes mais entièrement en ligne. Simple, rapide,
-                            accessible à tout moment et n’importe où, ces formations répondent aux besoins de ceux, qui pour de multiples raisons (éloignement géographiques, incompatibilité d’horaires, engagements familiaux ou professionnels), ne peuvent
-                            pas assister aux cours présentiels, tout en leur permettant de décrocher les mêmes diplômes. Ouverts à tout le monde, la formation en ligne permet aux participants une grande flexibilité quant au rythme de travail, tout en ayant
-                            accès à tous les supports utiles pour mener à bien les études suivies au sein de la filière choisie.<br/>
-                            <span class="font-weight-bold"><br/>DEROULEMENT DE LA FORMATION : </span><br/> La formation se passe entièrement en ligne, de l’inscription, jusqu’aux évaluations.
-                        </p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="container-fluid">
         <div class="row tous_page">
-            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+ 
+            <div class="col-12 title-ligne text-center mb-2">
+                <h3>Bienvenue - <span>Université en ligne</span></h3>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 mt-5">
                 <div class="NTIC_LICENCE" id="NTIC_LICENCE">
                     <h4 class="text-center mt-2">INFORMATIQUE ET TELECOMMUNICATION (TIC) - LICENCE</h4>
                     <hr>
-                    <div class="description p-5">
+                    <div class="description mt-5 p-3 p-md-4 p-lg-5">
                         <h5 class="object titre">Objectifs</h5>
                         <p>La mention Informatique et télécommunication a pour objectif de former des spécialistes dans le domaine du génie informatique et des télécommunications. Les diplômés sont capables de mettre à profit leurs connaissances dans les
                             applications des interconnexions de réseaux, des systèmes de télécommunications et de la sécurisation des échanges. Ils possèdent les compétences pour concevoir, intégrer, exploiter et administrer les systèmes informatiques
@@ -125,7 +122,7 @@
                         <p>- Télécommunication</p>
                         <p>- Génie Logiciel</p>
 
-                        <h5 class="titre">Admissibilité:</h5>
+                        <h5 class="titre">Admissibilité :</h5>
                         <p>La formation est ouverte à toutes personnes ayant un baccalauréat des séries scientifiques (C/D).</p>
                         <h5 class="titre">Sanction : </h5>
                         <p>La formation permet aux étudiants d’acquérir les diplômes de Licence en TECHNOLOGIE DE L’INFORMATIQUE ET DE LA TELECOMMUNICATION et ce suivant le système LMD actuellement appliqué à Madagascar.</p>
@@ -155,7 +152,7 @@
                         <p>- Image </p>
                         <p>- Développement web</p>
 
-                        <h5 class="titre">Admissibilité:</h5>
+                        <h5 class="titre">Admissibilité :</h5>
                         <p>La formation est ouverte à toutes personnes ayant un baccalauréat, de toutes les séries : A/C/D/Technique</p>
                         <h5 class="titre">Sanction : </h5>
                         <p>La formation permet aux étudiants d’acquérir les diplômes de Licence en COMMUNICATION AUDIOVISUELLE ET NUMERIQUE, et ce suivant le système LMD actuellement appliqué à Madagascar.</p>
@@ -420,18 +417,6 @@
                     <h4 class="text-center mt-2">DROIT - MASTER</h4>
                 </div>
 
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                        <img src="../image/sarymes.png" width="100%" height="100%" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 inscri">
-                        <a href="../universite"> <button class="btn   btn-custom btn-block  text-uppercase  btn-lg">S'inscrire</button></a>
-                    </div>
-                </div>
-
-               
-
-
             </div>
 
 
@@ -439,9 +424,9 @@
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 sisiny">
                 <h5 class="  mb-2 nivau_licence">LICENCE BACC +3</h5>
                 <div class="licence">
-                    <div class="row p-2 mt-3" id="ntic">
+                    <div class="row p-2" id="ntic">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/i(2).png" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/i(2).png" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere" id="titre_tic">Informatique et Télécommunication</h5>
@@ -450,7 +435,7 @@
                     </div>
                     <div class="row p-2 mt-3" id="can">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(8).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(8).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Communication Audiovisuelle et Numérique </h5>
@@ -459,7 +444,7 @@
                     </div>
                     <div class="row p-2 pl-0 mt-3" id="mp">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(9).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(9).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Marketing Publicité et Journalisme
@@ -469,7 +454,7 @@
                     </div>
                     <div class="row p-2 pl-0 mt-3" id="mana">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(1).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(1).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Management</h5>
@@ -478,7 +463,7 @@
                     </div>
                     <div class="row p-2 pl-0 mt-3" id="droit">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/96559581_252487285985778_1855848114401837056_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/96559581_252487285985778_1855848114401837056_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Droit</h5>
@@ -492,7 +477,7 @@
                 <div class="master">
                     <div class="row p-2 mt-3" id="Mtic">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(14).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(14).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Informatique et Système Embarqués </h5>
@@ -501,7 +486,7 @@
                     </div>
                     <div class="row p-2 mt-3" id="Mcan">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(10).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(10).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Audiovisuel et Cinématographie</h5>
@@ -511,7 +496,7 @@
 
                     <div class="row p-2 mt-3" id="Mmp">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(11).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(11).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Marketing Publicité et Journalisme
@@ -522,7 +507,7 @@
 
                     <div class="row p-2 pl-0 mt-3" id="mba">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(3).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(3).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">MBA spécialisé <br/>Master of Business Administration</h5>
@@ -532,7 +517,7 @@
 
                     <div class="row p-2 pl-0 mt-3" id="droitM">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/96516783_246995659713987_2893840906962599936_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/96516783_246995659713987_2893840906962599936_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Droit</h5>
@@ -544,59 +529,6 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="card mt-3 shadow-lg">          
-            <div class="row ml-3 mr-3">
-                <div class="col-md-6 card-body">
-                    <p class="card-text"><strong>FORMATION UNIVERSITAIRE EN LIGNE (e-learning)</strong></p>
-
-                         <h5>Formons les élites de demain !</h5>
-                        
-                        <br/>La formation en ligne de l'Université E-media est maintenant ouverte pour tous les pays d’Afrique francophone.
-                        
-                         <br/><br/>Notre vision c’est de bâtir l’Afrique de demain, donner à tout à chacun une formation Universitaire de haut niveau mais à moindre cout et avec plusieurs spécialisations aux choix. Avec moins de 1000 € par an, vous pouvez accéder à nos formations.
-                        
-                        <br/><br/><strong>Suivre la fac à distance c'est possible !</strong>                        
-                        <br/><br/>Où que vous soyez, décrochez nos prestigieux diplômes.
-                        
-                        <br/><br/>L'e-learning ou la formation universitaire en ligne de l’E-media vous permettent de décrocher les diplômes de Licence et Master reconnu par l’État, et suivant le système LMD.
-                        
-                        <br/><br/>L’Université E-MEDIA enrichit son offre de formation en mettant à disposition du public des formations diplomantes mais entièrement en ligne. Simple, rapide, accessible à tout moment et n’importe où, ces formations répondent aux besoins de ceux, qui pour de multiples raisons (éloignement géographiques, incompatibilité d’horaires, engagements familiaux ou professionnels), ne peuvent pas assister aux cours présentiels, tout en leur permettant de décrocher les mêmes diplômes.Ouverts à tout le monde, la formation en ligne permet aux participants une grande flexibilité quant au rythme de travail,tout en ayant accès à tous les supports utiles pour mener à bien les études suivies au sein de la filière choisie.
-                        
-                        <br/><br/>DEROULEMENT DE LA FORMATION :
-                        La formation se passe entièrement en ligne, de l’inscription, jusqu’aux évaluations.
-                        
-                    </p>
-                </div>
-
-                <div class="col-md-6 card-body">
-                    <p class="card-text"><strong>Vos avantages :</strong>
-
-                        <br/><h5>-Liberté et flexibilité :</h5>
-                        
-                        Une liberté d’étudier partout où vous êtes et où vous voulez ! En voyage, au travail, à l’hôtel, dans un restaurant, dans un bus, à l’étranger, chez vous (Rester dans votre pyjama et suivez nos cours. Apprendre dans un milieu qui vous est extrêmement familier peut vous permettre souvent de travailler très efficacement et plus facilement), …
-                        
-                        <br/><br/><h5>- Gestion du temps :</h5>
-                        
-                        Vous êtes le maître de votre temps : gérez votre emploi du temps (le matin, le soir ou la nuit) pour étudier et élargir vos connaissances.
-                        
-                        <br/><br/><h5>-Économie d’argent :</h5>
-                        
-                        Économisez plus ! car vous n’êtes plus obligé de vous déplacer à Antananarivo Madagascar pour continuer vos études, donc plus de loyers, plus de carburant ou d’autres frais supplémentaires pour pouvoir rejoindre l’école... 
-                            Et restez hors des embouteillages de la ville d’Antananarivo.
-                        
-                        <br/><br/><h5>-Plusieurs spécialisations au choix :</h5>
-                        
-                        Des larges choix de filières et de spécialisations qui pourraient combler vos besoins : Le Droit, la Diplomatie, le management, la Finance, le commerce International, le marketing, la publicité, la communication, la technologie, l’informatique, l’audiovisuel, la télévision, l’électronique, la robotique, le cinématographie, l’ingénierie du son etc...
-                        
-                        <br/><br/><h5>- Obtenir un diplôme universitaire reconnu : </h5> 
-                        
-                        Mais le plus fabuleux ! c’est la possibilité de pouvoir décrocher les prestigieux diplômes de l’Université E-media et de faire partie de ses élites.
-                <br/>
-                
-            </div>
-        </div>
-    </div>
   </div>  
 
     <!--footer-->

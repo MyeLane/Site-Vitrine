@@ -9,21 +9,21 @@
     <link rel="stylesheet" type="text/css" href="../css/animate.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/presentielle.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/fontawesome-free-5.8.2-web/css/all.min.css">
 
 </head>
 
 <body>
     <section id="topbar" class="d-none d-lg-block">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="container d-flex">
+            <div class="container-fluid d-flex">
                 <div class="contact-info mr-auto">
-                    <i class="bx bx-phone"></i> - CFP 0330225086 - UNIVERSITE 0341451875
+                    <i class="fas fa-phone"></i> - CFP 0330225086 - UNIVERSITE 0341451875
                 </div>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/Université-E-media-Madagascar-229963367202143/" class="facebook"><i class="bx bxl-facebook" data-toggle="tooltip" data-placement="left" title="Fb Universite e-media"></i></a>
-                    <a href="https://www.facebook.com/cfpEmediaMadagascar/" class="facebook"><i class="bx bxl-facebook" data-toggle="tooltip" data-placement="left" title="Fb CFP e-media"></i></a>
-                    <a href="https://www.facebook.com/Réussir-son-BACC-en-ligne-by-E-media-111251750568520/" class="facebook"><i class="bx bxl-facebook" data-toggle="tooltip" data-placement="left" title="FB BACC en Ligne"></i></a>
+                    <a href="https://www.facebook.com/Université-E-media-Madagascar-229963367202143/" class="facebook"><i class="fab fa-facebook" data-toggle="tooltip" data-placement="left" title="Fb Universite e-media"></i></a>
+                    <a href="https://www.facebook.com/cfpEmediaMadagascar/" class="facebook"><i class="fab fa-facebook" data-toggle="tooltip" data-placement="left" title="Fb CFP e-media"></i></a>
+                    <a href="https://www.facebook.com/Réussir-son-BACC-en-ligne-by-E-media-111251750568520/" class="facebook"><i class="fab fa-facebook" data-toggle="tooltip" data-placement="left" title="FB BACC en Ligne"></i></a>
                 </div>
             </div>
         </div>
@@ -60,17 +60,31 @@
 
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container">
-                <img src="../image/logo E-media.png" class="logo_emedia" alt="">
-                <h4>Bienvenue - Université (formation présentielle)</h4>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="container-fluid">
+                <div class="col-2">
+                    <img src="img/accueil/logo E-media.png" class="logo_emedia" alt="">
+                </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                <div class="col-6">
+                    <h3>Bienvenue - <span> Université (formation présentielle)</span></h3>
+                </div>
+
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center col-4 ml-lg-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link ligne" href="../index.php"><i class="bx bx-home">Accueil</i></a>
+
+                        </li>
+
+                        <li class="nav-item mr-3 mt-1 text-md-center">
+                            <a class="p-2" href="../universite"> <button class="btn text-uppercase  btn-lg pt-1 pb-1 pr-3 pl-3">S'inscrire</button></a>
+                        </li>
+
+                        <li class="nav-item mr-3 mr-sm-3 mr-md-3 mr-lg-0">
+                            <a class="nav-link ligne" href="../index.php"><i class="fas fa-home"></i>Accueil<span class="bottom-solid"></span></a>
 
                         </li>
                     </ul>
@@ -80,37 +94,15 @@
     </div>
     <!--Mifarana eto ny Nav Bar-->
     <!--Manomboka eto ny header -->
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 " id="acceuil">
-        <div class="container">
-            <div class="overlay">
-                <div class="row mt-4">
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 mt-5">
-                        <img src="../image/96537171_797577050775702_7714680588480806912_n.jpg" width="100%" height="520" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-5 description_emedia_acceuil">
-                        <p class="para_header"> <span class="legende"> Bienvenue.</span><br/>Universite E-media crée en 2015, l’Université E-MEDIA compte actuellement près de 600 étudiants. Elle est la première université à se spécialiser dans le domaine de l’audiovisuel et
-                            des nouvelles technologies compte tenu de l’évolution de ces domaines et de leur importance. Elle a pour objectif de former des jeunes hautement qualifiés et ayant les compétences nécessaires pour accompagner Madagascar dans
-                            le développement effréné du secteur technologique, et ainsi accroitre le potentiel économique du pays dans ces domaines.
-                            <span class="font-weight-bold">Caractéristique de la formation:</span><br/> Elle forme des cadres dans les domaines de l’audiovisuel, des nouvelles technologies et de la communication. La formation universitaire a été conçue
-                            afin de répondre aux besoins des jeunes ainsi que du marché du travail à Madagascar, qui souhaite embaucher des jeunes compétents techniquement, mais maitrisant également les domaines théoriques. La formation proposée est à
-                            la fois pratique et théorique.
-                            <br/><span class="font-weight-bold">Filières proposées:</span> <br/>Fidèle à son domaine principal, à savoir l’audiovisuel, E-media propose 3 filières qui sont en rapport de près ou de loin à celui-ci :
-                            <span>- Communication Audiovisuelle et Numérique (CAN),</span>
-                            <span>- Nouvelles technologies de l’Informatique et de la Télécommunication (NTIC), </span>
-                            <span>- Marketing, Publicité et Journalisme (MPJ) </span>
-                        </p>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     <div class="container-fluid tous">
         <div class="row slide_tous">
-            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+
+            <div class="col-12 title-presentielle">
+                <h3>Bienvenue - <span> Université (formation présentielle)</span></h3>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 mt-5 mt-sm-5 mt-md-5 mt-lg-0">
                 <div class="NTIC_LICENCE" id="NTIC_LICENCE">
                     <h4 class="text-center mt-2">FILIERE TECHNOLOGIES DE L’INFORMATIQUE ET DE LA COMMUNICATION (TIC) - LICENCE</h4>
                     <hr>
@@ -420,7 +412,7 @@
                 <div class="licence">
                     <div class="row p-2 mt-3" id="ntic">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/96231748_237443857587000_5413429904328884224_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/96231748_237443857587000_5413429904328884224_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere" id="titre_tic">Informatique et Télécommunication</h5>
@@ -429,7 +421,7 @@
                     </div>
                     <div class="row p-2 mt-3" id="can">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(8).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(8).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Communication Audiovisuelle et Numérique </h5>
@@ -438,7 +430,7 @@
                     </div>
                     <div class="row p-2 pl-0 mt-3" id="mp">
                         <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                            <img src="../image/filiere/1(9).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                            <img src="img/filiere/1(9).jpg" class="img_ligne" width="100%" height="100%" alt="">
                         </div>
                         <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                             <h5 class="card-title card-title_filiere">Marketing Publicité et Journalisme
