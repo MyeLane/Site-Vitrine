@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFP</title>
-    <link rel="icon" type="icon" href="image/logo E-media copie.png">
+    <link rel="icon" type="icon" href="img/accueil/logo.png">
     <link rel="stylesheet" type="text/css" href="css/animate.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/cfp.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/fontawesome-free-5.8.2-web/css/all.min.css">
 </head>
-<section id="topbar" class="d-none d-lg-block">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-        <div class="container d-flex">
-            <div class="contact-info mr-auto">
-                <i class="bx bx-phone"></i> - CFP 0330225086 - UNIVERSITE 0341451875
-            </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/Université-E-media-Madagascar-229963367202143/" class="facebook"><i class="bx bxl-facebook" data-toggle="tooltip" data-placement="left" title="Fb Universite e-media"></i></a>
-                <a href="https://www.facebook.com/cfpEmediaMadagascar/" class="facebook"><i class="bx bxl-facebook" data-toggle="tooltip" data-placement="left" title="Fb CFP e-media"></i></a>
-                <a href="https://www.facebook.com/Réussir-son-BACC-en-ligne-by-E-media-111251750568520/" class="facebook"><i class="bx bxl-facebook" data-toggle="tooltip" data-placement="left" title="FB BACC en Ligne"></i></a>
+
+<body>
+    <section id="topbar" class="d-none d-lg-block">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="container-fluid d-flex">
+                <div class="contact-info mr-auto">
+                    <i class="fas fa-phone"></i> - CFP 0330225086 - UNIVERSITE 0341451875
+                </div>
+                <div class="social-links pb-2">
+                    <a href="https://www.facebook.com/Université-E-media-Madagascar-229963367202143/" class="facebook"><i class="fab fa-facebook" data-toggle="tooltip" data-placement="left" title="Fb Universite e-media"></i></a>
+                    <a href="https://www.facebook.com/cfpEmediaMadagascar/" class="facebook"><i class="fab fa-facebook"data-toggle="tooltip" data-placement="left" title="Fb CFP e-media"></i></a>
+                    <a href="https://www.facebook.com/Réussir-son-BACC-en-ligne-by-E-media-111251750568520/" class="facebook"><i class="fab fa-facebook" data-toggle="tooltip" data-placement="left" title="FB BACC en Ligne"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -56,61 +58,55 @@
 
 
 
-<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-5">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mt-5">
+        <div class="container-fluid">
 
-            <img src="../image/logo E-media.png" class="logo_emedia" alt="">
-            <h4>Bienvenue - Centre de Formation Professionnelle</h4>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            
+                <div class="col-2">
+                    <img src="img/accueil/logo E-media.png" class="logo_emedia" alt="">
+                </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link ligne" href="../index.php"><i class="bx bx-home">Accueil</i></a>
+                <div class="col-6">
+                    <h3>Bienvenue  - <span>Centre de Formation Professionnelle</span></h3>
+                </div>
 
-                    </li>
-                </ul>
-            </div>
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center col-4 ml-lg-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+
+                        </li>
+
+                        <li class="nav-item mr-3 mt-1 text-md-center">
+                            <a class="p-2" href="../universite"> <button class="btn text-uppercase  btn-lg pt-1 pb-1 pr-3 pl-3">S'inscrire</button></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link ligne" href="../index.php"><i class="fas fa-home"></i>Accueil<span class="bottom-solid"></span></a>
+
+                        </li>
+                    </ul>
+                </div>
         </div>
     </nav>
 </div>
 <!--Mifarana eto ny Nav Bar-->
 <!--Manomboka eto ny header -->
-<div class="col-12 col-sm-12 col-md-12 col-lg-12 " id="acceuil">
-    <div class="container">
-        <div class="overlay">
-            <div class="row mt-4">
-                <div class="col-12 col-sm-12 col-md-8 col-lg-8 mt-5">
-                    <img src="../image/96735692_559166918357964_1257399878321963008_n.jpg" width="100%" height="520" alt="">
-                </div>
-                <div class="col-12 col-sm-12 col-md-4 col-lg-4 mt-5 description_emedia_acceuil">
-                    <p class="para_header"> <span class="legende"> Bienvenue Centre de Formation Professionnelle E-media</span><br/> Existante depuis 7 ans, la formation professionnelle a, depuis sa création formée des milliers de jeunes. Elle est le premier établissement à
-                        Madagascar proposant une formation professionnelle dans le domaine de l’audiovisuelle.<br/>
-                        <span class="font-weight-bold">Caractéristique de la formation:</span><br/> Dès sa création, E-MEDIA investit dans une formation professionnelle en audiovisuel. Elle s’engage alors à former des jeunes pour qu’ils soient les techniciens
-                        dont ces structures auront besoin. La formation professionnelle est étudiée pour cadrer avec les besoins de la jeunesse. Elle est à moyen terme qui est un avantage par rapport à l’investissement des étudiants en termes de temps
-                        et de cout. La formation professionnelle est une formation essentiellement technique.
-                        <br/>
-                        <span class="font-weight-bold">Cibles de la formation:</span><br/> La formation professionnelle se tourne vers les jeunes possédant ou non leur baccalauréat, car elle se donne également mission de donner une alternative aux jeunes,
-                        découragés par le système mais, désireux de se d’accéder directement à un métier d’avenir.<br/>
-                        <span class="font-weight-bold">
-                            Filières proposées:
-                            </span><br/> La formation professionnelle au sein de l’E-MEDIA est composée de 3 filières essentiellement tournés vers l’audiovisuel : - IMAGE - SON - WEB.
-                    </p>
 
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="container-fluid">
-    <div class="row profesionnelle_tous">
-        <div class="col-12 col-sm-12 col-md-8 col-lg-8 ">
+    <div class="row profesionnelle_tous mt-2">
 
-            <div class="IMAGE" id="IMAGE">
+        <div class="col-12 title-cfp">
+            <h3>Bienvenue  - <span>Centre de Formation Professionnelle</span></h3>
+        </div>
+        
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 mt-5">
+
+            <div class="IMAGE mt-5" id="IMAGE">
                 <h4 class="text-center mt-4">FORMATION PROFESSIONNELLE FILIERE IMAGE</h4>
                 <hr>
                 <div class="description p-5">
@@ -216,12 +212,12 @@
             </div>
 
         </div>
-        <div class="col-12 col-sm-12 col-md-4 col-lg-4 sisiny">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 sisiny mt-3">
             <h5 class=" mt-1 mb-2 nivau">Formation</h5>
             <div class="licence">
                 <div class="row p-2 mt-3" id="image">
                     <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                        <img src="../image/filiere/1(16).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                        <img src="img/filiere/1(16).jpg" class="img_ligne" width="100%" height="100%" alt="">
                     </div>
                     <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                         <h5 class="card-title card-title_filiere" id="titre_image">IMAGE</h5>
@@ -231,7 +227,7 @@
                 <hr>
                 <div class="row p-2 mt-3" id="son">
                     <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                        <img src="../image/filiere/1(15).jpg" class="img_ligne" width="100%" height="100%" alt="">
+                        <img src="img/filiere/1(15).jpg" class="img_ligne" width="100%" height="100%" alt="">
                     </div>
                     <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                         <h5 class="card-title card-title_filiere"> SON </h5>
@@ -241,7 +237,7 @@
                 <hr>
                 <div class="row p-2 pl-0 mt-3" id="web">
                     <div class="col-5 col-sm-5 col-md-5 col-lg-5">
-                        <img src="../image/filiere/96662601_716853715727807_1476678020575002624_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
+                        <img src="img/filiere/96662601_716853715727807_1476678020575002624_n.jpg" class="img_ligne" width="100%" height="100%" alt="">
                     </div>
                     <div class="col-7 col-sm-7 col-md-7 col-lg-7">
                         <h5 class="card-title card-title_filiere">WEB
@@ -265,7 +261,6 @@
 </footer>
 <!--footer tapitra-->
 
-<body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

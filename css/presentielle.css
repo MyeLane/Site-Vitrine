@@ -1,14 +1,15 @@
                         /*manomboka ny navbar*/
                         
                         #topbar {
-                            background: linear-gradient(-90deg, #01e6f8, #1d3ede);
-                            padding: 10px 0;
+                            background: #189cd0;
+                            padding: 0px 0;
                             font-size: 14px;
                             z-index: 900;
                         }
                         
                         #topbar .contact-info {
                             color: white;
+                            padding-top: 0.5rem;
                         }
                         
                         #topbar .contact-info a {
@@ -17,13 +18,10 @@
                             transition: 0.3s;
                         }
                         
-                        #topbar .contact-info a:hover {
-                            color: #de5a1d;
-                        }
-                        
                         #topbar .contact-info i {
-                            color: #e65c00;
+                            color: #3ae211;
                             padding: 4px;
+                            transform: rotate(90deg);
                         }
                         
                         #topbar .contact-info .icofont-phone {
@@ -32,18 +30,14 @@
                         }
                         
                         #topbar .social-links a {
+                            font-size: 30px;
                             color: #fdfcfc;
                             padding: 5px;
                             display: inline-block;
                             line-height: 1px;
                             transition: 0.3s;
-                            background: #1d3ede !important;
                             border-radius: 50%;
                             margin-left: 10px;
-                        }
-                        
-                        #topbar .social-links a:hover {
-                            color: #e65c00;
                         }
                         
                         .navbar {
@@ -59,11 +53,14 @@
                             color: aliceblue !important;
                         }
                         
-                        .navbar ul li a:hover {
-                            background: linear-gradient(-90deg, #01e6f8, #1d3ede);
-                            color: white!important;
-                            border-top-right-radius: 15px;
-                            border-bottom-left-radius: 15px;
+                        .navbar h3 {
+                            color: #000;
+                            font-weight: bold;
+                            line-height: 30px;
+                        }
+
+                        .navbar h3 span {
+                            color: #189cd0;
                         }
                         
                         .btn {
@@ -83,9 +80,8 @@
                         }
                         
                         .navbar ul li .ligne {
-                            background: red;
                             border-radius: 20px;
-                            color: white!important;
+                            color: #189cd0 !important;
                         }
                         
                         .navbar h4 {
@@ -117,6 +113,22 @@
                             margin-top: 80px;
                         }
                         
+                        .slide_tous h4 {
+                            font-weight: 600;
+                        }
+
+                        .title-presentielle h3 {
+                            display: none;
+                            text-align: center;
+                            color: #000;
+                            font-weight: bold;
+                            line-height: 30px;
+                        }
+
+                        .title-presentielle h3 span {
+                            color: #189cd0;
+                        }
+
                         .description_emedia_acceuil {
                             background-color: #dbdbdb;
                             padding: 10px;
@@ -141,7 +153,7 @@
                         /*footer*/
 
         footer {
-            background: linear-gradient(-90deg, #01e6f8, #1d3ede);
+            background: #189cd0;
             font-size: 15px;
             color: white;
             margin-top: 50px;
@@ -246,7 +258,7 @@
                         }
                         
                         .titre {
-                            color: #1d3ede;
+                            color: #189cd0;
                         }
                         
                         #NTIC_MASTER {
@@ -269,14 +281,14 @@
                         }
                         
                         .titre {
-                            font-size: 15px;
+                            font-size: 20px;
                             font-weight: bold;
                         }
                         
                         .btn {
-                            border: 1px solid #1d3ede;
+                            border: 1px solid #189cd0;
                             border-radius: 25px;
-                            color: #1d3ede;
+                            color: #189cd0;
                             transition: 1s;
                             padding-top: 1px;
                             padding-bottom: 1px;
@@ -285,7 +297,7 @@
                         
                         .btn:hover {
                             color: #fff;
-                            background: #1d3ede;
+                            background: #189cd0;
                         }
                         
                         .card-title_filiere {
@@ -294,7 +306,7 @@
                         
                         .nivau {
                             font-weight: 600;
-                            color: #1d3ede;
+                            color: #189cd0;
                         }
                         
                         #ntic {
@@ -409,21 +421,15 @@
                             .navbar .navbar-brand {
                                 color: aliceblue !important;
                             }
-                            .navbar ul li a:hover {
-                                background: linear-gradient(-90deg, #01e6f8, #1d3ede);
-                                color: white!important;
-                                border-top-right-radius: 15px;
-                                border-bottom-left-radius: 15px;
-                            }
+                            
                             .navbar ul li a {
                                 color: #535353!important;
                                 font-size: 15px;
                                 transition: 0.3s;
                             }
                             .navbar ul li .ligne {
-                                background: red;
                                 border-radius: 20px;
-                                color: white!important;
+                                color: #189cd0 !important;
                             }
                             .logo_emedia {
                                 height: 40px;
@@ -459,9 +465,9 @@
                                 font-size: 11px;
                             }
                             .btn {
-                                border: 1px solid #1d3ede;
+                                border: 1px solid #189cd0;
                                 border-radius: 25px;
-                                color: #1d3ede;
+                                color: #189cd0;
                                 transition: 1s;
                                 padding-top: 1px;
                                 padding-bottom: 1px;
@@ -487,6 +493,10 @@
                                 color: #1d3ede;
                                 color: #fff;
                             }
+
+                            .navbar-collapse {
+                                left: 39%;
+                            }
                         }
                         
                         @media (min-width: 576px) and (max-width: 767.98px) {
@@ -511,6 +521,10 @@
                                 margin-left: 33px;
                                 margin-top: -72px;
                                 margin-bottom: 48px;
+                            }
+
+                            .navbar-collapse {
+                                left: 39%;
                             }
                         }
                         
@@ -539,6 +553,18 @@
                                 margin-left: 33px;
                                 margin-top: -72px;
                                 margin-bottom: 48px;
+                            }
+
+                            .navbar h3 {
+                                display: none;
+                            }
+
+                            .title-presentielle h3 {
+                                display: block;
+                            }
+
+                            .navbar-collapse {
+                                left: 39%;
                             }
                         }
                         
@@ -577,4 +603,17 @@
                             .pslide_tous p {
                                 font-size: 13px;
                             }
+
+                            .title-presentielle h3 {
+                                display: block;
+                            }
+
+                            .navbar h3 {
+                                display: none;
+                            }
+
+                            .navbar-collapse {
+                                left: 34%;
+                            }
+
                         }
